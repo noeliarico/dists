@@ -1,0 +1,16 @@
+citHeader("To cite dists in publications use:")
+
+citEntry(
+  entry    = "dists package",
+  title    = ,
+  author   = "Noelia Rico",
+  journal  = ,
+  year     = 2020,
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = ,
+  textVersion = paste(
+
+  )
+)
