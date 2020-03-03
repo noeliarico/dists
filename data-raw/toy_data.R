@@ -1,3 +1,5 @@
+normalize <- function(x){((x-min(x))/(max(x)-min(x)))}
+
 toy_data <- clusterlab::clusterlab(centers = 3,
                                    r = 2,
                                    numbervec = c(5, 5, 5),
