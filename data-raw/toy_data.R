@@ -12,4 +12,4 @@ toy_data <- as_tibble(t(toy_data$synthetic_data)) %>%
 ggplot(toy_data, aes(V1, V2, color = cluster)) +
   geom_point()
 
-usethis::use_data(toy_data, overwrite = TRUE)
+usethis::use_data(toy_data, overwrite = TRUE, )
