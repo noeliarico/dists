@@ -12,19 +12,11 @@
 #' @useDynLib dists distance
 distance <- function(data, distance = "euc") {
 
-  data <- as.matrix(data)
-  m <- as.double(matrix(sample(1:10, 6), ncol = 3))
+  data <- data.matrix(data)
 
-  distance <- .C("distance",
-                 distance = getCodeDistance(distance), # numeric code of the distance function
-                 data = as.double(data), # dataset in compatible type
-                 ncol = ncol(data),     # total number of variables of the dataset
-                 nrow = nrow(data),     # total number of objects of the dataset
-                 x = as.integer(0),        # index of the first object
-                 y = as.integer(4),        # index of the second object
-                 result = as.double(-1)) #double *result
+  distance <- outer(1:nrow(data), 1:nrow(data), dbv, data = data,  distance = distance)
 
-  class(distance) <- "distance"
+  class(distance) <- c("distance", "matrix")
   return(distance)
 }
 
@@ -40,13 +32,29 @@ distance <- function(data, distance = "euc") {
 #'
 #' @examples
 distanceBetween <- function(x, y, distance = "euc") {
-
-  print("Return the distance between two points")
-
-  distance <- -1
-  class(distance) <- "distance"
+  #TODO check that both vectors hace the same length
+  data <- matrix(c(x, y), byrow = FALSE, ncol = length(x))
+  distance <- db(data, distance)
   return(distance)
 }
+
+db <- function(x, y, data, distance) {
+
+  #TODO is matrix data
+  print(paste(c("x = ", x, ", y = ", y), collapse = ""))
+  distance <- .C("distance",
+                 #distance = getCodeDistance(distance), # numeric code of the distance function
+                 distance = 1,
+                 data = as.double(data), # dataset in compatible type
+                 ncol = ncol(data),     # total number of variables of the dataset
+                 nrow = nrow(data),     # total number of objects of the dataset
+                 x = as.integer(x),        # index of the first object
+                 y = as.integer(y),        # index of the second object
+                 result = as.double(-1)) #double *result
+  return(distance$result)
+
+}
+dbv <- Vectorize(db, vectorize.args = c("x", "y"))
 
 #' Title
 #'

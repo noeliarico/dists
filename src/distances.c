@@ -211,7 +211,7 @@ void distance(int *distance, // numeric code of the distance function
               double *result) {// array of centers
 
   // Original variables
-  int lncol = *ncol, lnrow = *nrow, lx = *x, ly = *y, ldistance = *distance;
+  int lncol = *ncol, lnrow = *nrow, lx = *x - 1, ly = *y - 1, ldistance = *distance;
 
   //printf("x = %d , y = %d\n", lx, ly);
 
@@ -232,6 +232,8 @@ void distance(int *distance, // numeric code of the distance function
   }
 
   printf("Value of distance = %f\n", df(data, lx, ly, lnrow, lncol));
+
+  *result = df(data, lx, ly, lnrow, lncol);
 
 }
 
