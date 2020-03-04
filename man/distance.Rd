@@ -7,10 +7,15 @@
 distance(data, distance = "euc")
 }
 \arguments{
-\item{distance}{}
+\item{distance}{the three-letters name of the distance function chosen
+to calculate the distance between the objects of the dataset. Codes:
+- Manhattan distance (man):
+- Euclidean distance (euc):
+- Chebyshev distance (che):}
 }
 \value{
-A matrix of distances
+A matrix containing the distance between all the objects of the
+dataset calculating with the chosen distance function.
 }
 \description{
 Distance

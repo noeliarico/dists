@@ -2,16 +2,28 @@
 % Please edit documentation in R/distance.R
 \name{distanceBetween}
 \alias{distanceBetween}
-\title{Title}
+\title{Calculates the distance between two vector of the same length using the
+chosen distance function.}
 \usage{
 distanceBetween(x, y, distance = "euc")
 }
 \arguments{
-\item{distance}{}
+\item{x}{first vector}
+
+\item{y}{second vector}
+
+\item{distance}{distance function used to calculate the distance between the
+vectors.}
 }
 \value{
-
+A positive number that is the distance between the two vectors
 }
 \description{
-Title
+Calculates the distance between two vector of the same length using the
+chosen distance function.
+}
+\examples{
+# Uses the default distance function: Euclidean distance
+distanceBetween(c(1, 2, 3), c(3, 2, 1))
+
 }

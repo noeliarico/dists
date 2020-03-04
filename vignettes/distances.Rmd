@@ -1,0 +1,77 @@
+---
+title: "distances"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{distances}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(dists)
+library(tidyverse)
+data("toy_data1")
+```
+
+## Euclidean distance
+
+```{r echo=FALSE, results='asis'}
+v <- 1
+w <- 3
+out <- c("$$d_{\\text{euc}}(x_", v, ", x_", w, ") = ")
+for(i in 1:ncol(toy_data1)) {
+  v <- toy_data1 %>% slice(i) %>% pull(V1)
+  w <- toy_data1 %>% slice(i) %>% pull(V2)
+  out <- append(out, c("(",v,"-",w,")^2"))
+  if(i != ncol(toy_data1)) # check so it is no added in last pair
+    out <- append(out, c(" + "))
+}
+out <- append(out,"$$")
+cat(paste(out, collapse = ""))
+```
+
+## Neyman distance
+
+$$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
+
+```{r echo=FALSE, results='asis'}
+v <- 1
+w <- 3
+
+
+trace_ney <- function(i1, i2) {
+  out <- c("$$d_{\\text{ney}}(x_", v, ", x_", w, ") = ")
+for(i in 1:ncol(toy_data1)) {
+  v <- toy_data1 %>% slice(i1) %>% pull(i)
+  w <- toy_data1 %>% slice(i2) %>% pull(i)
+  out <- append(out, c("\\frac{(",v,"-",w,")^2}{",v,"+",w,"}"))
+  if(i != ncol(toy_data1)) # check so it is no added in last pair
+    out <- append(out, c(" + "))
+}
+out <- append(out," = ")
+totalnum <- 0
+totaldenom <- 0
+for(i in 1:ncol(toy_data1)) {
+  v <- toy_data1 %>% slice(i1) %>% pull(i)
+  w <- toy_data1 %>% slice(i2) %>% pull(i)
+  totalnum <- totalnum + (v-w)^2
+  totaldenom <- totaldenom + (v+w)
+  out <- append(out, c("\\frac{",(v-w)^2,"}{",(v+w),"}"))
+  if(i != ncol(toy_data1)) # check so it is no added in last pair
+    out <- append(out, c(" + "))
+}
+out <- append(out, c(" = \\frac{",totalnum,"}{",totaldenom,"} = ", round(totalnum/totaldenom, 4)))
+out <- append(out,"$$")
+return(paste(out, collapse = ""))
+}
+
+out <- sapply(1:(nrow(toy_data1)-1), function(x) trace_ney(x, x+1))
+cat(unlist(out))
+```

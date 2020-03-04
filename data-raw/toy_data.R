@@ -15,3 +15,17 @@ ggplot(toy_data, aes(V1, V2, color = cluster)) +
   geom_point()
 
 usethis::use_data(toy_data, overwrite = TRUE, )
+
+
+set.seed(2020)
+toy_data1 <- tibble(V1 = sample(1:10, 5),
+                    V2 = sample(1:10, 5))
+set.seed(2020)
+toy_data2 <- tibble(V1 = sample(1:10, 5),
+                    V2 = sample(1:10, 5),
+                    V3 = sample(1:10, 5))
+set.seed(2020)
+toy_data3 <- tibble(V1 = sample(1:10, 5),
+                    V2 = sample(1:10, 5),
+                    V3 = sample(1:10, 5),
+                    V4 = sample(1:10, 5))

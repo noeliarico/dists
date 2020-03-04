@@ -1,0 +1,42 @@
+---
+title: "explanation"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{explanation}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dists)
+library(tidyverse)
+data(toy_data1)
+```
+
+```{r echo=FALSE, results='asis'}
+out <- paste0("$$ d_{\\text{euc}}({\\bf v}, {\\bf w}) = \\sqrt{\\sum_{i=1}^n (v_i-w_i)^2}$$")
+cat(out)
+```
+
+```{r echo=FALSE, results='asis'}
+v <- 1
+w <- 3
+out <- c("$$ d_{\\text{euc}}(", v, ", ", w, ") = ")
+for(i in 1:ncol(toy_data1)) {
+  v <- toy_data1 %>% slice(i) %>% pull(V1)
+  w <- toy_data1 %>% slice(i) %>% pull(V2)
+  out <- append(out, c("(",v,"-",w,")^2"))
+  if(i != ncol(toy_data1)) # check so it is no added in last pair
+    out <- append(out, c(" + "))
+}
+out <- append(out,"$$")
+cat(out)
+```
+
