@@ -217,7 +217,7 @@ void distance(int *distance, // numeric code of the distance function
   float lresult = 0.0;
 
   unsigned int ldistance = *distance;
-  printf("lncol = %d , lnrow = %d, ldistance = %d\n", lncol, lnrow, ldistance);
+  //printf("lncol = %d , lnrow = %d, ldistance = %d\n", lncol, lnrow, ldistance);
 
   DistanceFunction df;
 
@@ -249,7 +249,7 @@ void distance(int *distance, // numeric code of the distance function
 
   lresult = df(data, lx, ly, lnrow, lncol);
   *result = lresult;
-  printf("distance = %f\n", lresult);
+  //printf("distance = %f\n", lresult);
 
 }
 

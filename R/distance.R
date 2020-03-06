@@ -51,11 +51,9 @@ distance <- function(data, distance = "euc") {
 distanceBetween <- function(x, y, distance = "euc") {
 
   #TODO check that both vectors hace the same length
-  data <- matrix(c(x, y), byrow = FALSE, ncol = length(x))
-  print(class(data))
-  print(class(data[0,0]))
+  data <- matrix(c(x, y), byrow = TRUE, ncol = length(x))
   distance <- db(1, 2, data, distance)
-  print(class(distance))
+  print(paste0("x=(", paste(x, collapse = ",") , "), y=(", paste(y, collapse = ", "), ") ---- ", distance))
   return(distance)
 }
 
