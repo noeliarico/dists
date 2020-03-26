@@ -2,6 +2,7 @@
 # dists
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/noeliarico/dists.svg?branch=master)](https://travis-ci.org/noeliarico/dists)
 <!-- badges: end -->
 
 The goal of dists is to ...
