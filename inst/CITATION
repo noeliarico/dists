@@ -1,11 +1,11 @@
 citHeader("To cite dists in publications use:")
 
 citEntry(
-  entry    = "dists package",
-  title    = ,
-  author   = "Noelia Rico",
+  entry    = "Article",
+  title    = "dists",
+  author   = "N Rico",
   journal  = ,
-  year     = 2020,
+  year     = ,
   volume   = ,
   number   = ,
   pages    = ,
