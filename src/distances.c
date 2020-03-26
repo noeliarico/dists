@@ -4,20 +4,77 @@
 
 typedef double (*DistanceFunction)(double*, int, int, int, int);
 
-double man(double* data, int x, int y, int nrow, int ncol) {
+//---------------------------------------------------------------------
+//-- Canberra distance ------------------------------------------------
+//---------------------------------------------------------------------
+double can(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
-  double total = 0.0, xi, yi;
+  double total = 0.0, xi, yi, numerator, denominator;
 
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    total += fabs(xi - yi);
+    numerator = fabs(xi - yi);
+    denominator = fabs(xi) + fabs(yi);
+    if(denominator > 0) {
+      total += (numerator / denominator);
+    }
   }
 
   return(total);
 }
 
+//---------------------------------------------------------------------
+//-- Chebyshev distance -----------------------------------------------
+//---------------------------------------------------------------------
+double che(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double max = 0.0, xi, yi, sum1;
+
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    sum1 = fabs(xi - yi);
+    if(max < sum1) {
+      max = sum1;
+    }
+  }
+
+  return(max);
+}
+
+//---------------------------------------------------------------------
+//-- Cosine distance --------------------------------------------------
+//---------------------------------------------------------------------
+double cosine(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double total = 0.0, xi, yi,
+    numerator = 0.0, denominator = 0.0, sumxi = 0.0, sumyi = 0.0;
+
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    printf("x = %d , y = %d, data[x] = %f, data[y] = %f\n", (x + nrow * c), (y + nrow * c), xi, yi);
+    numerator += (xi * yi);
+    sumxi += (xi * xi);
+    sumyi += (yi * yi);
+  }
+  denominator = sqrt(sumxi) * sqrt(sumyi);
+  if(denominator == 0.0) {
+    total = 0.0;
+  }
+  else {
+    total = 1.0 - (numerator/denominator);
+  }
+  return total;
+}
+
+//---------------------------------------------------------------------
+//-- Euclidean distance -----------------------------------------------
+//---------------------------------------------------------------------
 double euc(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
@@ -32,41 +89,97 @@ double euc(double* data, int x, int y, int nrow, int ncol) {
   return(sqrt(total));
 }
 
-double che(double* data, int x, int y, int nrow, int ncol) {
+//---------------------------------------------------------------------
+//-- Jaccard distance -------------------------------------------------
+//---------------------------------------------------------------------
+double jac(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
-  double total = 0.0, xi, yi, max, sum1;
+  double total = 0.0, xi, yi,
+    sum1 = 0.0, sum2 = 0.0, sum3 = 0.0, sum4 = 0.0;
 
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    sum1 = fabs(xi - yi);
-    if(max < sum1) {
-      max = sum1;
-    }
+    sum1 += (xi - yi) * (xi - yi);
+    sum2 += xi * xi;
+    sum3 += yi * yi;
+    sum4 += xi * yi;
+  }
+
+  if((sum2 + sum3 - sum4) == 0.0) {
+    total = 0;
+  }
+  else{
+    total = (sum1 / (sum2 + sum3 - sum4));
   }
 
   return(total);
 }
 
-double can(double* data, int x, int y, int nrow, int ncol) {
+//---------------------------------------------------------------------
+//-- Manhattan distance -----------------------------------------------
+//---------------------------------------------------------------------
+double man(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
-  double total = 0.0, xi, yi, numerator, denominator;
+  double total = 0.0, xi, yi;
 
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    numerator = fabs(xi - yi);
-    denominator = fabs(xi) + fabs(yi);
-    if(denominator > 0) {
-      total += numerator / denominator;
-    }
+    total += fabs(xi - yi);
   }
 
   return(total);
 }
 
+//---------------------------------------------------------------------
+//-- Matusita distance ------------------------------------------------
+//---------------------------------------------------------------------
+double mat(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double sum = 0.0, total = 0.0, xi, yi;
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    sum = sqrt(xi) - sqrt(yi); // difference
+    sum = sum * sum; // square of the differences
+    total += sum;
+  }
+  return sqrt(total);
+
+}
+
+
+//---------------------------------------------------------------------
+//-- Squared Chord distance -------------------------------------------
+//---------------------------------------------------------------------
+double trd(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double total = 0.0, xi, yi, sum = 0.0;
+
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    sum = sqrt(xi) - sqrt(yi); // difference
+    sum = sum * sum; // square of the differences
+    total += sum;
+  }
+
+  return(total);
+}
+
+
+
+
+
+
+//---------------------------------------------------------------------
+//-- Gower distance ---------------------------------------------------
+//---------------------------------------------------------------------
 double gow(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
@@ -85,71 +198,15 @@ double gow(double* data, int x, int y, int nrow, int ncol) {
   return(total);
 }
 
-double jac(double* data, int x, int y, int nrow, int ncol) {
-
-  int c;
-  double total = 0.0, xi, yi, sum1 = 0.0, sum2 = 0.0, sum3 = 0.0, sum4 = 0.0;
-
-  for(c = 0; c < ncol; c++) {
-    xi = data[x + nrow * c];
-    yi = data[y + nrow * c];
-    sum1 += (xi - yi) * (xi - yi);
-    sum2 += xi * xi;
-    sum3 += yi * yi;
-    sum4 += xi * yi;
-  }
-  if((sum2 + sum3 - sum4) == 0) {
-    total = 0;
-  }
-  else{
-    total = (sum1 / (sum2 + sum3 - sum4));
-  }
-
-  return(total);
-}
 
 
-double cosine(double* data, int x, int y, int nrow, int ncol) {
-
-  int c;
-  double total = 0.0, xi, yi, numerator = 0.0, denominator = 0.0, sumxi = 0.0, sumyi = 0.0;
-
-  for(c = 0; c < ncol; c++) {
-    xi = data[x + nrow * c];
-    yi = data[y + nrow * c];
-    printf("x = %d , y = %d, data[x] = %f, data[y] = %f\n", (x + nrow * c), (y + nrow * c), xi, yi);
-    numerator += (xi * yi);
-    sumxi += pow(xi, 2);
-    sumyi += pow(yi, 2);
-  }
-  denominator = sqrt(sumxi) * sqrt(sumyi);
-  if(denominator == 0.0) {
-    total = 0.0;
-  }
-  else {
-    total = 1.0 - (numerator/denominator);
-  }
-  return total;
 
 
-}
 
-double scd(double* data, int x, int y, int nrow, int ncol) {
 
-  int c;
-  double total = 0.0, xi, yi, sum1;
-
-  for(c = 0; c < ncol; c++) {
-    xi = data[x + nrow * c];
-    yi = data[y + nrow * c];
-    sum1 = sqrt(xi) - sqrt(yi); // difference
-    sum1 = sum1 * sum1; // square of the differences
-    total += sum1;
-  }
-
-  return(total);
-}
-
+//---------------------------------------------------------------------
+//-- Clark distance ---------------------------------------------------
+//---------------------------------------------------------------------
 double cla(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
@@ -168,24 +225,29 @@ double cla(double* data, int x, int y, int nrow, int ncol) {
   return sqrt(total);
 }
 
-
+//---------------------------------------------------------------------
+//-- Neyman distance --------------------------------------------------
+//---------------------------------------------------------------------
 double ney(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
-  double total = 0.0, xi, yi, numerator;
+  double total = 0.0, numerator = 0.0, xi, yi;
 
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    numerator = pow((xi - yi), 2);
+    numerator = (xi - yi) * (xi - yi);
     if(xi > 0) {
-      total += numerator / xi;
+      total += (numerator / xi);
     }
   }
 
-  return sqrt(total);
+  return total;
 }
 
+//---------------------------------------------------------------------
+//-- Pearson distance -------------------------------------------------
+//---------------------------------------------------------------------
 double pea(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
@@ -200,8 +262,9 @@ double pea(double* data, int x, int y, int nrow, int ncol) {
     }
   }
 
-  return sqrt(total);
+  return total;
 }
+
 
 void distance(int *distance, // numeric code of the distance function
               double *data,      // data
@@ -223,22 +286,37 @@ void distance(int *distance, // numeric code of the distance function
 
   switch (ldistance) {
 
-  case 12013: // Manhattan distance
-    df = man;
+  case 2013: // Canberra distance
+    df = can;
     break;
-  case 4202:
-    df = euc;
-    break;
-  case 274:
+  case 274: // Chebyshev distance
     df = che;
     break;
   case 21418: // Cosine distance
-    printf("Using cosine distance\n");
     df = cosine;
     break;
-  case 13424:
+  case 4202: // Euclidean distance
+    df = euc;
+    break;
+  case 902: // Jaccard distance
+    df = jac;
+    break;
+  case 12013: // Manhattan distance
+    df = man;
+    break;
+  case 12019: // Matusita distance
+    df = mat;
+    break;
+  case 13424: // Neyman distance
     df = ney;
     break;
+  case 1540: // Pearson distance
+    df = pea;
+    break;
+  case 19173: // Triangular discrimination distance (Squared Chord distance)
+    df = trd;
+    break;
+
   default:
     df = euc;
     break;

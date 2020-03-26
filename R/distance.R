@@ -99,8 +99,6 @@ getCodeDistance <- function(distanceName) {
   return(as.integer(paste0((distanceLetters - 97), collapse = "")))
 }
 
-
-
 print.distance <- function(distance) {
   cat(distance)
   invisible(distance)
