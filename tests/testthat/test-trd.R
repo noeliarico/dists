@@ -1,0 +1,12 @@
+test_that("Triangular discrimation distance (Squared Chord distance) - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "sqc"), (sqrt(7)-sqrt(6))^2+(sqrt(4)-sqrt(6))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "sqc"), (sqrt(7)-sqrt(8))^2+(sqrt(4)-sqrt(1))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "sqc"), (sqrt(7)-sqrt(1))^2+(sqrt(4)-sqrt(5))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "sqc"), (sqrt(7)-sqrt(10))^2+(sqrt(4)-sqrt(2))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "sqc"), (sqrt(6)-sqrt(8))^2+(sqrt(6)-sqrt(1))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "sqc"), (sqrt(6)-sqrt(1))^2+(sqrt(6)-sqrt(5))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "sqc"), (sqrt(6)-sqrt(10))^2+(sqrt(6)-sqrt(2))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "sqc"), (sqrt(8)-sqrt(1))^2+(sqrt(1)-sqrt(5))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "sqc"), (sqrt(8)-sqrt(10))^2+(sqrt(1)-sqrt(2))^2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "sqc"), (sqrt(1)-sqrt(10))^2+(sqrt(5)-sqrt(2))^2, tolerance=1e-6)
+})

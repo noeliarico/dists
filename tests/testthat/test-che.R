@@ -1,0 +1,12 @@
+test_that("Gower distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "che"), 2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "che"), 3, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "che"), 6, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "che"), 3, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "che"), 5, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "che"), 5, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "che"), 4, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "che"), 7, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "che"), 2, tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "che"), 9, tolerance=1e-6)
+})

@@ -1,0 +1,12 @@
+test_that("Manhattan distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "man"), 3, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "man"), 4, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "man"), 7, tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "man"), 5, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "man"), 7, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "man"), 6, tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "man"), 8, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "man"), 11, tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "man"), 3, tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "man"), 12, tolerance=1e-6)
+})

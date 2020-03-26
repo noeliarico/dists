@@ -1,0 +1,12 @@
+test_that("Neyman distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "ney"), (((7-6)^2)/7)+(((4-6)^2)/4), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "ney"), (((7-8)^2)/7)+(((4-1)^2)/4), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "ney"), (((7-1)^2)/7)+(((4-5)^2)/4), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "ney"), (((7-10)^2)/7)+(((4-2)^2)/4), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "ney"), (((6-8)^2)/6)+(((6-1)^2)/6), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "ney"), (((6-1)^2)/6)+(((6-5)^2)/6), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "ney"), (((6-10)^2)/6)+(((6-2)^2)/6), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "ney"), (((8-1)^2)/8)+(((1-5)^2)/1), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "ney"), (((8-10)^2)/8)+(((1-2)^2)/1), tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "ney"), (((1-10)^2)/1)+(((5-2)^2)/5), tolerance=1e-6)
+})
