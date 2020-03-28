@@ -1,0 +1,22 @@
+* installing *source* package ‘dists’ ...
+** using staged installation
+** libs
+make: Nothing to be done for `all'.
+make: `symbols.rds' is up to date.
+installing to /Users/noelia/Desktop/Github/dists/..Rcheck/00LOCK-dists/00new/dists/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
+** testing if installed package keeps a record of temporary installation path
+* DONE (dists)

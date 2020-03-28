@@ -7,18 +7,10 @@ Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: MIT + file LICENSE
-Imports: 
-    clusterlab,
-    dplyr,
-    ggplot2,
-    magrittr,
-    tibble,
-    tidyr
+Imports: clusterlab, dplyr, ggplot2, magrittr, tibble, tidyr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
-Suggests: 
-    knitr,
-    rmarkdown,
-    testthat (>= 2.1.0)
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown, testthat (>= 2.1.0)
 VignetteBuilder: knitr
+Built: R 3.6.2; x86_64-apple-darwin15.6.0; 2020-03-28 16:44:17 UTC; unix

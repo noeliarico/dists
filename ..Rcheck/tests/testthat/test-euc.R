@@ -1,0 +1,12 @@
+test_that("Euclidean distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "euc"), sqrt(5), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "euc"), sqrt(10), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "euc"), sqrt(37), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "euc"), sqrt(13), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "euc"), sqrt(29), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "euc"), sqrt(26), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "euc"), sqrt(32), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "euc"), sqrt(65), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "euc"), sqrt(5), tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "euc"), sqrt(90), tolerance=1e-6)
+})

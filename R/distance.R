@@ -12,9 +12,7 @@
 #'
 #' @export
 #'
-#' @examples
 #'
-#' @useDynLib dists distance
 distance <- function(data, distance = "euc") {
 
   n <- rownames(data)

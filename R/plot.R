@@ -1,3 +1,13 @@
+#' Title
+#'
+#' @param index1
+#' @param index2
+#' @param df
+#' @param distance
+#'
+#' @return
+#'
+#' @examples
 plotDistance <- function(index1, index2, df, distance) {
   df <- as.data.frame(df)
   x1 = df[index1, 1]   # x1/x2/y1/y2 defined here for shorthand later

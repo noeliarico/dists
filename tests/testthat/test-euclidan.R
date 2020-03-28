@@ -1,6 +1,6 @@
 test_that("Euclidean works toy_data1", {
 
-  d <- round(distance(toy_data1, "euc"), 6)
+  d <- round(distance(as.matrix(toy_data1), "euc"), 6)
 
   expect_equivalent(d[1,], c(0, 2.236068, 3.162278, 6.082763, 3.605551))
   expect_equivalent(d[2,], c(2.236068, 0, 5.385165, 5.099020, 5.656854))

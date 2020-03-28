@@ -1,0 +1,12 @@
+test_that("coscard distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "cos"), 1-((7*6+4*6)/(sqrt(7^2+4^2)*sqrt(6^2+6^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "cos"), 1-((7*8+4*1)/(sqrt(7^2+4^2)*sqrt(8^2+1^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "cos"), 1-((7*1+4*5)/(sqrt(7^2+4^2)*sqrt(1^2+5^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "cos"), 1-((7*10+4*2)/(sqrt(7^2+4^2)*sqrt(10^2+2^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "cos"), 1-((6*8+6*1)/(sqrt(6^2+6^2)*sqrt(8^2+1^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "cos"), 1-((6*1+6*5)/(sqrt(6^2+6^2)*sqrt(1^2+5^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "cos"), 1-((6*10+6*2)/(sqrt(6^2+6^2)*sqrt(10^2+2^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "cos"), 1-((8*1+1*5)/(sqrt(8^2+1^2)*sqrt(1^2+5^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "cos"), 1-((8*10+1*2)/(sqrt(8^2+1^2)*sqrt(10^2+2^2))), tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "cos"), 1-((1*10+5*2)/(sqrt(1^2+5^2)*sqrt(10^2+2^2))), tolerance=1e-6)
+})

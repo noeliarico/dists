@@ -1,0 +1,309 @@
+Hmm ... looks like a package
+
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (./Rd2.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+ (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys
+.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+)) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty)
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfileche
+ck.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecount
+er.sty)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmode
+.def)
+No file Rd2.aux.
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlest
+ring.sty))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 21.
+
+[1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2]
+No file Rd2.ind.
+[3] (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ){/Users/noelia/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-
+0.enc}</Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (3 pages, 111661 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (4 entries accepted, 0 rejected).
+Sorting entries....done (9 comparisons).
+Generating output file Rd2.ind....done (14 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (./Rd2.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+ (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys
+.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+)) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty)
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfileche
+ck.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecount
+er.sty)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmode
+.def) (./Rd2.aux)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlest
+ring.sty)) (./Rd2.out) (./Rd2.out)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 21.
+
+(./Rd2.toc) [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/
+pdftex.map}] [2] (./Rd2.ind [3] [4]) (./Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ){/Users/noelia/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-
+0.enc}</Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (4 pages, 113638 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (4 entries accepted, 0 rejected).
+Sorting entries....done (9 comparisons).
+Generating output file Rd2.ind....done (14 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (./Rd2.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/bk10.clo))
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Rd.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/bm.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/alltt.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.tex)))))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def))
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty))
+ (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty)
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys
+.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+)) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/atbegshi/atbegshi.sty)
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/atveryend/atveryend.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfileche
+ck.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecount
+er.sty)))
+
+Package hyperref Warning: Option `hyperindex' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+
+Package hyperref Warning: Option `pagebackref' has already been used,
+(hyperref)                setting the option has no effect on input line 377.
+
+) (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/makeidx.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty)
+Writing index file Rd2.idx
+
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfmode
+.def) (./Rd2.aux)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlest
+ring.sty)) (./Rd2.out) (./Rd2.out)
+(/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd)
+
+LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
+(Font)              using `OML/cmm/m/it' instead
+(Font)              for symbol `textless' on input line 21.
+
+(./Rd2.toc) [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/
+pdftex.map}] [2] (./Rd2.ind [3] [4]) (./Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ){/Users/noelia/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-
+0.enc}</Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></Users/noelia/Library/TinyTeX/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (4 pages, 114127 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘dists-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /var/folders/dh/0jwplp2n3_g2623m7x9c__mm0000gn/T//RtmplwfPVO/Rd2pdf172fb10a0c278'

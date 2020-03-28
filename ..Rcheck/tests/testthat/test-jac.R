@@ -1,0 +1,12 @@
+test_that("Jaccard distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "jac"), 5/(7^2+4^2+6^2+6^2+(-7*6-4*6)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "jac"), 10/(7^2+4^2+8^2+1^2+(-7*8-4*1)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "jac"), 37/(7^2+4^2+1^2+5^2+(-7*1-4*5)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "jac"), 13/(7^2+4^2+10^2+2^2+(-7*10-4*2)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "jac"), 29/(6^2+6^2+8^2+1^2+(-6*8-6*1)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "jac"), 26/(6^2+6^2+1^2+5^2+(-6*1-6*5)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "jac"), 32/(6^2+6^2+10^2+2^2+(-6*10-6*2)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "jac"), 65/(8^2+1^2+1^2+5^2+(-8*1-1*5)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "jac"), 5/(8^2+1^2+10^2+2^2+(-8*10-1*2)), tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "jac"), 90/(1^2+5^2+10^2+2^2+(-1*10-5*2)), tolerance=1e-6)
+})

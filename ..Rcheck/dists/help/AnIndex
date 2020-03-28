@@ -1,0 +1,7 @@
+dists-package	dists-package
+%>%	pipe
+distance	distance
+distanceBetween	distanceBetween
+dists	dists-package
+getCodeDistance	getCodeDistance
+hello	hello

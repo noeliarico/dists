@@ -1,0 +1,12 @@
+test_that("Canberra distance - distanceBetween", {
+  expect_equal(distanceBetween(c(7,4), c(6,6), "can"), (1/13)+(1/5), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(8,1), "can"), (1/15)+(3/5), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(1,5), "can"), (6/8)+(1/9), tolerance=1e-6)
+  expect_equal(distanceBetween(c(7,4), c(10,2), "can"), (3/17)+(1/3), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(8,1), "can"), (2/14)+(5/7), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(1,5), "can"), (5/7)+(1/11), tolerance=1e-6)
+  expect_equal(distanceBetween(c(6,6), c(10,2), "can"), (4/16)+(4/8), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(1,5), "can"), (7/9)+(4/6), tolerance=1e-6)
+  expect_equal(distanceBetween(c(8,1), c(10,2), "can"), (2/18)+(1/3), tolerance=1e-6)
+  expect_equal(distanceBetween(c(1,5), c(10,2), "can"), (9/11)+(3/7), tolerance=1e-6)
+})

@@ -1,0 +1,287 @@
+* using log directory ‘/Users/noelia/Desktop/Github/dists/..Rcheck’
+* using R version 3.6.2 (2019-12-12)
+* using platform: x86_64-apple-darwin15.6.0 (64-bit)
+* using session charset: UTF-8
+* checking for file ‘./DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘dists’ version ‘0.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... WARNING
+Subdirectory ‘dists/src’ contains apparent object files/libraries
+  code.o distances.o dists.so
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... WARNING
+Found the following executable files:
+  .git/objects/01/19be8dff9d9970963f70feb331582b1316ed4a
+  .git/objects/03/9ef9e9caa9a0570d8e2410ab6392e46cbca7fd
+  .git/objects/06/e943cbba67e46ddcd0f0a49076f703fe06636d
+  .git/objects/07/d20f0ea534dfa8b8c59d1f7f5666c83a2b5788
+  .git/objects/08/221ff650f39a6c372faf07313db69c9f79d0f3
+  .git/objects/0a/878f3097f1d9470915ee2661581ce6e9ed524a
+  .git/objects/0a/f6a3623dc71e95e692e66c173ab7fe93cd6b18
+  .git/objects/0b/fc008180eaa95f7aad68305307c21f1bd0b9b2
+  .git/objects/13/d41355475aa78501ca2b567c5f1ca284d00da0
+  .git/objects/15/11c1f9f8a448a7ca70cc803045bf90f8d68524
+  .git/objects/16/a75ca5a333add0a875a480da601f3fc5fb8520
+  .git/objects/1c/4722f66a016bd65c4fe6b412cbc8cb0b77a902
+  .git/objects/1c/dd573b20f53b3ebe31c021e154c4338ca456af
+  .git/objects/1f/4e1085fa88820c6281edc5bd842d7e7d41a32d
+  .git/objects/1f/efed2202c1f5531e893a722115a28c167a56f6
+  .git/objects/25/a616e546c3e1ee4788541d059b410d5e0080e3
+  .git/objects/25/fdf81764f435f73c95e299f20dccee450e232f
+  .git/objects/27/8d666e0b462dfff8c93e03f5712c11ba2d8634
+  .git/objects/28/7b6ccdcbfa73ac11b641b2f2b94d669aea7f77
+  .git/objects/2e/ebabac7342230ab310674185303a142968bc2f
+  .git/objects/2f/107551ab739b326993f89e5f8a8816ea9f00ce
+  .git/objects/2f/c947a267b02b29509fe17b7ba9ffa57cf2dff4
+  .git/objects/31/24d5ba3ef8b48cc4191a8f92acd967f62758de
+  .git/objects/32/8fea9b44d12344cbf50428005c7f476545a4cb
+  .git/objects/34/520d82e982c23cc49b9dc60d0f98eb9f1d38f6
+  .git/objects/35/a153593e21e49a7fa154296f674768d6a2bd22
+  .git/objects/36/5a142983ee8927d718150baff1cda973333ef2
+  .git/objects/3a/be9e14a2a5d2b2356d0f77ada36b16097a7f01
+  .git/objects/3e/77555c05555bc6cd4a190ba86bce3d8f235fe2
+  .git/objects/42/b6ff13c244f78a98173a3e5443bc0f6c18f20e
+  .git/objects/49/23293613c7d4dbde96532c72ec9acf0e7dbc70
+  .git/objects/4b/00233365802cfb1a9f81b47e9050f447260119
+  .git/objects/4c/73426af83b40c18cdfa7a434fd85f4ad4ab20f
+  .git/objects/4e/aad15f6e3cea06747c546eca4b272fe4448b26
+  .git/objects/52/84fb10534cd57bd5c6257bef0f82e14980e08e
+  .git/objects/53/8e0f65dc1e5feec5dddc5684c941fd261f4d33
+  .git/objects/53/ee3cfbfe7cc8f6993f0964368a498e210a1402
+  .git/objects/58/b792cfc4278b9aaa7bb31426bdc2b063a713b6
+  .git/objects/5a/499f18fe95ca974bafa623f064e35e0422350b
+  .git/objects/5a/859415c1f7eacfd94920968bc910e2f1f1427e
+  .git/objects/5d/79a4113e574e1c274a5ce775abb6574383fd2c
+  .git/objects/5f/ae7b946feb9a32a71d0b41b44697993e4e087c
+  .git/objects/60/b4c5bb6de4fae60effac13cd6a36874a770496
+  .git/objects/64/60c26f129dc1550c92ff747393949cc19bd890
+  .git/objects/67/063937f1c22392dd6994400fa62b28bba21ed2
+  .git/objects/6a/ce1ff8584d6e72fc6f16967d91acaa93aeaa2f
+  .git/objects/6e/c63666a5e26e05301b9067386c5ae45abafa1c
+  .git/objects/6e/f5f5a6c13854534b3c04ce71504dbacaf2dbfd
+  .git/objects/71/53c27e5f0b486764f45819ce83a1976a005532
+  .git/objects/73/361e3d99e0af8d829b7ea6106ba0fe616a512e
+  .git/objects/75/9c6e5e7008f7891f9b367c00ebf0d971cd68b9
+  .git/objects/79/1558411c9cc5fbdfed36bb5830a14f8b2d58d2
+  .git/objects/7e/7048faebb92b85ed06afddd1a8a4581241d6a4
+  .git/objects/7f/fb2c4007780db13c2f53e4541d7a08d59e9e3c
+  .git/objects/80/e6a90d391434ff64e0d355b145aa17583aca7e
+  .git/objects/85/fa47232d7027a7aedac328de1791868741d751
+  .git/objects/86/51b9d080c6ccfd05365e086014d18ce581e74c
+  .git/objects/87/a023130553b399792febe8d88bfe7e99ba2766
+  .git/objects/88/ad82769b87f10725c57dca6fcf41b4bffe462c
+  .git/objects/8c/c0157a75349b3ba3fb4d4636792b1929a1878e
+  .git/objects/8c/df5b04a6e1c9aafda348fcf7b75633bfb8f920
+  .git/objects/8f/90368332b2212613968a2a1564ec82b9049b41
+  .git/objects/91/242b6a315c0f0efb52239aac94b425cae9b9d4
+  .git/objects/92/1cbd7cceadffed391579807a3b4c39d6866062
+  .git/objects/92/3cf2488c55b8b044ae911f20d55d860133b9b5
+  .git/objects/93/171674f5bc53001eeeb833a69da6916f55114e
+  .git/objects/97/72a3fdae038687c8d7d5414b721d346898b62a
+  .git/objects/98/e04acad8e8e6e1dc9422d28548e549112bcf15
+  .git/objects/99/4999ce4210e456d65f7def101fe740f11f9553
+  .git/objects/9a/1881c39556345a02fd70071d55b21a780745bd
+  .git/objects/9d/d25c9f82d47170597f0bc86594f321fe890e07
+  .git/objects/a0/7714b535aa29810945605401bfc0adf9db0882
+  .git/objects/a1/374fcb81d35ae4d0710645e1bdebdb2228f516
+  .git/objects/a1/c64378f3a2b0ae4a777be845b5d69fab27357f
+  .git/objects/a5/4ad6237eddd7e6f60dc51daa35962da551c002
+  .git/objects/a6/f7f5e4c707501e96e0bb7df22f538f4fce1c61
+  .git/objects/a7/566e5b92209f2f7415b29fad2a755d09ad48dd
+  .git/objects/ab/c8af866219added8c3e6f473dca9e80fb255a4
+  .git/objects/ae/03a23d9a0f838e4f9d356f1038506621b9ae8c
+  .git/objects/af/29e564b508cd8db738e4a30d03b9c3d4595f8a
+  .git/objects/b1/5f36f0e2bcad0f4f7190ea3644a532d957c420
+  .git/objects/b3/5504cd3a282816130a16881f3ebeead9c1bcb4
+  .git/objects/b3/9a50005ad06f90211730afda5e4f2e0bb0127c
+  .git/objects/b4/475f5d194d23c3937c919c1703e3fe4005b573
+  .git/objects/b8/f1b7c445ea7ab9899201d9f5be263f9403eec0
+  .git/objects/b9/9ff8aa784a6445045dd2714797e37febfb7c87
+  .git/objects/ba/b7a1270596a17d183d958e16cb31ff222576a4
+  .git/objects/bb/560079d805864c7bf190fe8fa93bf0dded73b5
+  .git/objects/bb/63adcf4f7c654c88c7ac2bf31f2d093d5f0851
+  .git/objects/bc/6ecfe46deb3d67b2f676326e3622327da161ba
+  .git/objects/bd/57bf968168aa1e0081524aee0f6bd2c258d62b
+  .git/objects/c0/1e5923be6ff1edbccf20f93be6bdf8dbd67bb3
+  .git/objects/c1/a23ae9236ee6e921decc9063bc07d3b151dc8a
+  .git/objects/c4/8d538d5b36ba93f5742185ff7a3be573adac7d
+  .git/objects/c6/cfc090b5ee7e45b638fbb80ed0320c11dee20f
+  .git/objects/c8/092b852cf8e9277b67b65dee89a2eb582ece37
+  .git/objects/ca/e780490c871d8ad5521141912b414e0e5fb7cf
+  .git/objects/cb/ea28f585cfc32a87e0e895581d670b38e3944b
+  .git/objects/d1/c1c1bfebc5b037e7872e2a1d425b4f6bb8a4a3
+  .git/objects/d7/1d12b2085b179cbc76715fcf64c8510d396ac5
+  .git/objects/d7/dabb97e1ce671d08f9d043faec394ab2d9e12b
+  .git/objects/dc/aaa01be9079bc62790e92101724e03f60f65b5
+  .git/objects/dc/c77a462ba9417d903a47b31ce2998d029ee087
+  .git/objects/e2/86034bc0b6c16fe0dcf9c4bd12d7bf1a299b38
+  .git/objects/e4/f3e7613a2b194351e071eaa7b20e72d30dbcef
+  .git/objects/e5/f1fe1dfa2c34c51fe941829b511acd8c763301
+  .git/objects/eb/a8c65e7e6508c629e47faaa2219df4b534f9dd
+  .git/objects/ec/309ac292c51df64283f3684660acdd44805442
+  .git/objects/ec/397a40d951e83f2136f2fc5cb72dcedb312c61
+  .git/objects/ed/f984d021dfb9f5c6bf2be68bb5f51f5af07b9e
+  .git/objects/ee/9594341db01d06ea94caa158b725e09badb30a
+  .git/objects/f0/7a367e12729aeca039c1ae78d49e4df876343c
+  .git/objects/f2/1e8bbfb8adcc481968582f062147cd5ce48794
+  .git/objects/f6/197afd56e119d1c1717b21f57588cf590c9f34
+  .git/objects/f9/df57bdd6638df9a64701fb1239018d3e7840ab
+  .git/objects/fb/fa67df22b649a720d06de931410cbc41d09b92
+  .git/objects/fc/9aa259dc2cc1b1f311ddf989bb28e23d53fee2
+Source packages should not contain undeclared executable files.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .RData
+  .Rhistory
+  .github/.gitignore
+  .gitignore
+  .gitlab-ci.yml
+  .travis.yml
+  src/.gitignore
+  vignettes/.gitignore
+  ..Rcheck
+  .Rproj.user
+  .git
+  .github
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... ERROR
+Found the following file with a non-portable file name:
+  Icon
+These are not valid file names on all R platforms.
+Please rename the files and try again.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+ WARNING
+Found the following file with a non-portable file name:
+  Icon
+These are not fully portable file names.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘dists’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
+See ‘/Users/noelia/Desktop/Github/dists/..Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following directory with the name of a check directory:
+  ./..Rcheck
+Most likely, these were included erroneously.
+Invalid citation information in ‘inst/CITATION’:
+  Error in bibentry(bibtype = entry, textVersion = textVersion, header = header,     footer = footer, ...): argumento ausente, sin argumento por omisión
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... NOTE
+Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
+
+A namespace must be able to be loaded with just the base namespace
+loaded: otherwise if the namespace gets loaded by a saved object, the
+session will be unable to start.
+
+Probably some imports need to be declared in the NAMESPACE file.
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘clusterlab’ ‘dplyr’ ‘ggplot2’ ‘tibble’ ‘tidyr’
+  All declared Imports should be used.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+plotDistance: no visible global function definition for
+  ‘add_annotation_manhattan’
+plotDistance: no visible global function definition for
+  ‘add_annotation_euclidean’
+plotDistance: no visible global function definition for
+  ‘add_annotation_chebyshev’
+Undefined global functions or variables:
+  add_annotation_chebyshev add_annotation_euclidean
+  add_annotation_manhattan
+* checking Rd files ... NOTE
+prepare_Rd: distance.Rd:23-25: Dropping empty section \examples
+prepare_Rd: getCodeDistance.Rd:12-14: Dropping empty section \value
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  ‘db’ ‘toy_data’ ‘toy_data1’ ‘toy_data2’ ‘toy_data3’
+Undocumented data sets:
+  ‘toy_data’ ‘toy_data1’ ‘toy_data2’ ‘toy_data3’
+All user-level objects in a package should have documentation entries.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'distance'
+  ‘data’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... WARNING
+  Warning: package needs dependence on R (>= 2.10)
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+File ‘dists/libs/dists.so’:
+  Found ‘_printf’, possibly from ‘printf’ (C)
+    Object: ‘distances.o’
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking files in ‘vignettes’ ... WARNING
+Files in the 'vignettes' directory but no files in 'inst/doc':
+  ‘Introduction.Rmd’, ‘distances.Rmd’, ‘explanation.Rmd’
+* checking examples ... ERROR
+Running examples in ‘dists-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: hello
+> ### Title: Hello, World!
+> ### Aliases: hello
+> 
+> ### ** Examples
+> 
+> hello()
+Error in hello() : could not find function "hello"
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+  Running ‘testthat.R’
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... WARNING
+dir.exists(dir) is not TRUEdir.exists(dir) is not TRUEdir.exists(dir) is not TRUE
+Package vignettes without corresponding single PDF/HTML:
+   ‘Introduction.Rmd’
+   ‘distances.Rmd’
+   ‘explanation.Rmd’
+
+* checking running R code from vignettes ... NONE
+  ‘Introduction.Rmd’using ‘UTF-8’... OK
+  ‘distances.Rmd’using ‘UTF-8’... OK
+  ‘explanation.Rmd’using ‘UTF-8’... OK
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 ERRORs, 10 WARNINGs, 7 NOTEs
