@@ -22,6 +22,12 @@ library(tidyr)
 data("toy_data1")
 ```
 
+Available distance measures:
+
+- `euc` 
+
+# Minkowski distance measures
+
 ## Euclidean distance
 
 ```{r echo=FALSE, results='asis'}

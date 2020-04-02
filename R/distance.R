@@ -1,11 +1,21 @@
-#' Distance
+#' Calculate matrix of distances
 #'
-#' @param data
-#' @param distance the three-letters name of the distance function chosen
-#' to calculate the distance between the objects of the dataset. Codes:
+#' `distance` returns a matrix of distances between all the objects in data
+#' using the distance function indicated in the arguments.
+#'
+#' @details
 #' - Manhattan distance (man):
 #' - Euclidean distance (euc):
 #' - Chebyshev distance (che):
+#'
+#' @param data matrix where each row represent an object of the dataset
+#' defined by the variables in the columns.
+#' If the object is not a matrix but it has and adequate structure
+#' (i.e. it is a tibble or data.frame)it will be cast to matrix by the function.
+#' @param distance the three-letters name of the distance function chosen
+#' to calculate the distance between the objects of the dataset. Codes:
+#'
+
 #'
 #' @return A matrix containing the distance between all the objects of the
 #' dataset calculating with the chosen distance function.
@@ -31,13 +41,15 @@ distance <- function(data, distance = "euc") {
 }
 
 
-#' Calculates the distance between two vector of the same length using the
+#' Distance between two vectors
+#'
+#' Calculate the distance between two vector of the same length using the
 #' chosen distance function.
 #'
 #' @param x first vector
 #' @param y second vector
 #' @param distance distance function used to calculate the distance between the
-#' vectors.
+#' vectors
 #'
 #' @return A positive number that is the distance between the two vectors
 #'
@@ -48,17 +60,43 @@ distance <- function(data, distance = "euc") {
 #' @export
 distanceBetween <- function(x, y, distance = "euc") {
 
-  #TODO check that both vectors hace the same length
+  if(length(x) != length(y))
+    stop("The vectors must have the same length")
+
+  if(distance %in% availableDistances())
+    stop("Distance not available")
+
   data <- matrix(c(x, y), byrow = TRUE, ncol = length(x))
   distance <- db(1, 2, data, distance)
   print(paste0("x=(", paste(x, collapse = ",") , "), y=(", paste(y, collapse = ", "), ") ---- ", distance))
   return(distance)
 }
 
+#' List of available distances
+#'
+#' `availableDistance` returns a list of the available codes representing
+#'   distance functions that can be used in the methods of this package.
+#'
+#' @return character vector containing the codes of the available distances
 #' @export
+availableDistances <- function() {
+  return(c("can", # 2013 - Canberra
+           "che", # 274 - Chebyshev
+           "cos", # 21418 - Cosine
+           "euc", # 4202 - Euclidean
+           "jac", # 902 - Jaccard
+           "man", # 12013 - Manhattan
+           "mat", # 12019 - Matusita
+           "ney", # 13424 - Neyman
+           "pea", # 1540 - Pearson distance
+           "trd"  # 19173 - Triangular discrimination (Squared Chord)
+         ))
+}
+
+# Internal function to get the distance between two rows of the dataset
+#' @keywords internal
 db <- function(x, y, data, distance) {
 
-  #TODO is matrix data
   distance <- .C("distance",
                  distance = getCodeDistance(distance), # numeric code of the distance function
                  data = as.double(data), # dataset in compatible type
@@ -69,8 +107,7 @@ db <- function(x, y, data, distance) {
                  result = as.double(-1)) #double *result
   return(round(distance$result, 12))
 }
-
-
+#' @keywords internal
 dbv <- Vectorize(db, vectorize.args = c("x", "y"))
 
 #' Get the code of a distance function
@@ -78,9 +115,7 @@ dbv <- Vectorize(db, vectorize.args = c("x", "y"))
 #' @param distanceName Identifier of the distance function using a string of lower case letters of three characters
 #'
 #' @return
-#' @export
-#'
-#' @examples
+#' @keywords internal
 getCodeDistance <- function(distanceName) {
 
   distanceLetters <- unlist(strsplit(distanceName, ""))

@@ -1,4 +1,4 @@
-#' Title
+#' Plot the distance between two functions
 #'
 #' @param index1
 #' @param index2

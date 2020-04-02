@@ -22,9 +22,9 @@ install.packages("dists")
 
 - `can` - **Canberra distance**:
    
-$$
+$`
 d_{\text{can}}({\bf v}, {\bf w}) = \sum_{i=1}^n \frac{\left|v_i-w_i\right|}{\left|v_i\right|+\left|w_i\right|}
-$$
+$`
 
 - `che` - **Chebyshev distance**:
 $$d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|\,.$$
