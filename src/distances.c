@@ -57,7 +57,7 @@ double cosine(double* data, int x, int y, int nrow, int ncol) {
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    printf("x = %d , y = %d, data[x] = %f, data[y] = %f\n", (x + nrow * c), (y + nrow * c), xi, yi);
+    //printf("x = %d , y = %d, data[x] = %f, data[y] = %f\n", (x + nrow * c), (y + nrow * c), xi, yi);
     numerator += (xi * yi);
     sumxi += (xi * xi);
     sumyi += (yi * yi);

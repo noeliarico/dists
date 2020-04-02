@@ -2,24 +2,29 @@
 % Please edit documentation in R/distance.R
 \name{distance}
 \alias{distance}
-\title{Distance}
+\title{Calculate matrix of distances}
 \usage{
 distance(data, distance = "euc")
 }
 \arguments{
+\item{data}{matrix where each row represent an object of the dataset
+defined by the variables in the columns.
+If the object is not a matrix but it has and adequate structure
+(i.e. it is a tibble or data.frame)it will be cast to matrix by the function.}
+
 \item{distance}{the three-letters name of the distance function chosen
-to calculate the distance between the objects of the dataset. Codes:
-- Manhattan distance (man):
-- Euclidean distance (euc):
-- Chebyshev distance (che):}
+to calculate the distance between the objects of the dataset. Codes:}
 }
 \value{
 A matrix containing the distance between all the objects of the
 dataset calculating with the chosen distance function.
 }
 \description{
-Distance
+`distance` returns a matrix of distances between all the objects in data
+using the distance function indicated in the arguments.
 }
-\examples{
-
+\details{
+- Manhattan distance (man):
+- Euclidean distance (euc):
+- Chebyshev distance (che):
 }

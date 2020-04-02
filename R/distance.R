@@ -21,8 +21,6 @@
 #' dataset calculating with the chosen distance function.
 #'
 #' @export
-#'
-#'
 distance <- function(data, distance = "euc") {
 
   n <- rownames(data)
@@ -63,7 +61,7 @@ distanceBetween <- function(x, y, distance = "euc") {
   if(length(x) != length(y))
     stop("The vectors must have the same length")
 
-  if(distance %in% availableDistances())
+  if(!distance %in% availableDistances())
     stop("Distance not available")
 
   data <- matrix(c(x, y), byrow = TRUE, ncol = length(x))

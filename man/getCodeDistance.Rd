@@ -15,3 +15,4 @@ getCodeDistance(distanceName)
 \description{
 Get the code of a distance function
 }
+\keyword{internal}

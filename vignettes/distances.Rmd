@@ -24,62 +24,73 @@ data("toy_data1")
 
 Available distance measures:
 
-- `euc` 
+- `can` - Canberra distance
+- `che` - [Chebyshev distance][Chebyshev distance]
+- `cos`
+- `euc` - [Euclidean distance][Euclidean distance]
+- `jac`
+- `man` - [Manhattan distance][Manhattan distance]
+- `mat`
+- `ney`
+- `pea`
+- `trd`
 
-# Minkowski distance measures
+# Distance functions
 
-## Euclidean distance
+## Minkowski distances
 
-```{r echo=FALSE, results='asis'}
-v <- 1
-w <- 3
-out <- c("$$d_{\\text{euc}}(x_", v, ", x_", w, ") = ")
-for(i in 1:ncol(toy_data1)) {
-  v <- toy_data1 %>% slice(i) %>% pull(V1)
-  w <- toy_data1 %>% slice(i) %>% pull(V2)
-  out <- append(out, c("(",v,"-",w,")^2"))
-  if(i != ncol(toy_data1)) # check so it is no added in last pair
-    out <- append(out, c(" + "))
-}
-out <- append(out,"$$")
-cat(paste(out, collapse = ""))
-```
+### Euclidean distance
 
-## Neyman distance
-
-$$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
-
-```{r echo=FALSE, results='asis'}
-v <- 1
-w <- 3
+$$ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}\,.$$
 
 
-trace_ney <- function(i1, i2) {
-  out <- c("$$d_{\\text{ney}}(x_", v, ", x_", w, ") = ")
-for(i in 1:ncol(toy_data1)) {
-  v <- toy_data1 %>% slice(i1) %>% pull(i)
-  w <- toy_data1 %>% slice(i2) %>% pull(i)
-  out <- append(out, c("\\frac{(",v,"-",w,")^2}{",v,"+",w,"}"))
-  if(i != ncol(toy_data1)) # check so it is no added in last pair
-    out <- append(out, c(" + "))
-}
-out <- append(out," = ")
-totalnum <- 0
-totaldenom <- 0
-for(i in 1:ncol(toy_data1)) {
-  v <- toy_data1 %>% slice(i1) %>% pull(i)
-  w <- toy_data1 %>% slice(i2) %>% pull(i)
-  totalnum <- totalnum + (v-w)^2
-  totaldenom <- totaldenom + (v+w)
-  out <- append(out, c("\\frac{",(v-w)^2,"}{",(v+w),"}"))
-  if(i != ncol(toy_data1)) # check so it is no added in last pair
-    out <- append(out, c(" + "))
-}
-out <- append(out, c(" = \\frac{",totalnum,"}{",totaldenom,"} = ", round(totalnum/totaldenom, 4)))
-out <- append(out,"$$")
-return(paste(out, collapse = ""))
-}
+### Manhattan distance
 
-out <- sapply(1:(nrow(toy_data1)-1), function(x) trace_ney(x, x+1))
-cat(unlist(out))
-```
+$$d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|\,.$$
+
+
+### Chebyshev distance
+
+$$d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|\,.$$
+
+
+- `can` - **Canberra distance**: [canberra]
+   
+$$
+d_{\text{can}}({\bf v}, {\bf w}) = \sum_{i=1}^n \frac{\left|v_i-w_i\right|}{\left|v_i\right|+\left|w_i\right|}
+$$
+    
+- `cos` - **Cosine distance**:
+
+$$d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}\,.$$
+    
+
+    
+- `jac` - **Jaccard distance**:
+
+$$d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}\,.$$
+
+
+
+- `mat` - **Matusita distance**:
+
+$$d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}\,.$$
+
+- `mas` - **Max symmetric distance**:
+
+$$   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)\,.$$
+
+- `ney` - **Neyman distance**:
+
+$$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}\,.$$
+
+- `pea` - **Pearson distance**:
+
+$$     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}\,.$$
+
+- `trd` - *Triangular discrimination distance*:
+$$d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
+
+- `vsd` - **Vicissitude distance**:
+
+$$d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}\,.$$

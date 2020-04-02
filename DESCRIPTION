@@ -1,12 +1,17 @@
 Type: Package
 Package: dists
-Title: What the Package Does (Title Case)
+Title: dists: Calculate Distances Between Objects Using a Common Interface
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: MIT + file LICENSE
+Depends:
+    R (>= 2.10)
+Authors@R: person("Noelia", "Rico", email = "noeliarico@uniovi.es",
+                  role = c("aut", "cre"))
+Maintainer: Noelia Rico <noeliarico@uniovi.es>
+Description: General interfaz for calculating distance between objects.
+   The package provides functions to calculate matrix of distances or the
+   distance between two objects with an argument that specified the distance
+   function used.
+License: GPL-3
 Imports: 
     clusterlab,
     dplyr,
