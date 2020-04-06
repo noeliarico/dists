@@ -6,8 +6,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Distance — distance • dists</title>
+<title>Calculate matrix of distances — distance • dists</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -39,8 +46,10 @@
 
 
 
-<meta property="og:title" content="Distance — distance" />
-<meta property="og:description" content="Distance" />
+<meta property="og:title" content="Calculate matrix of distances — distance" />
+<meta property="og:description" content="`distance` returns a matrix of distances between all the objects in data
+using the distance function indicated in the arguments." />
+<meta property="og:image" content="http://noeliarico.github.io/dists/logo.png" />
 
 
 
@@ -95,7 +104,10 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/distances.html">distances</a>
+      <a href="../articles/Distances.html">distances</a>
+    </li>
+    <li>
+      <a href="../articles/Introduction.html">Introduction</a>
     </li>
     <li>
       <a href="../articles/explanation.html">explanation</a>
@@ -118,13 +130,14 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Distance</h1>
+    <h1>Calculate matrix of distances</h1>
     
     <div class="hidden name"><code>distance.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Distance</p>
+    <p>`distance` returns a matrix of distances between all the objects in data
+using the distance function indicated in the arguments.</p>
     </div>
 
     <pre class="usage"><span class='fu'>distance</span>(<span class='no'>data</span>, <span class='kw'>distance</span> <span class='kw'>=</span> <span class='st'>"euc"</span>)</pre>
@@ -133,12 +146,16 @@
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
+      <th>data</th>
+      <td><p>matrix where each row represent an object of the dataset
+defined by the variables in the columns.
+If the object is not a matrix but it has and adequate structure
+(i.e. it is a tibble or data.frame)it will be cast to matrix by the function.</p></td>
+    </tr>
+    <tr>
       <th>distance</th>
       <td><p>the three-letters name of the distance function chosen
-to calculate the distance between the objects of the dataset. Codes:
-- Manhattan distance (man):
-- Euclidean distance (euc):
-- Chebyshev distance (che):</p></td>
+to calculate the distance between the objects of the dataset. Codes:</p></td>
     </tr>
     </table>
 
@@ -146,10 +163,12 @@ to calculate the distance between the objects of the dataset. Codes:
 
     <p>A matrix containing the distance between all the objects of the
 dataset calculating with the chosen distance function.</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>
-</div></pre>
+    <p>- Manhattan distance (man):
+- Euclidean distance (euc):
+- Chebyshev distance (che):</p>
+
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -161,7 +180,7 @@ dataset calculating with the chosen distance function.</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by The package maintainer.</p>
+  <p>Developed by Noelia Rico.</p>
 </div>
 
 <div class="pkgdown">

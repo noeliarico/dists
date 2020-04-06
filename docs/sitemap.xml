@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://noeliarico.github.io/dists//index.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/availableDistances.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/distance.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/distanceBetween.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/getCodeDistance.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/pipe.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//reference/plotDistance.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//articles/Distances.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//articles/Introduction.html</loc>
+  </url>
+  <url>
+    <loc>http://noeliarico.github.io/dists//articles/explanation.html</loc>
+  </url>
+</urlset>
