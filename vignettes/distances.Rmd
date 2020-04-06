@@ -88,7 +88,7 @@ $$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i
 
 $$     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}\,.$$
 
-- `trd` - *Triangular discrimination distance*:
+- `trd` - **Triangular discrimination distance**:
 $$d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
 
 - `vsd` - **Vicissitude distance**:

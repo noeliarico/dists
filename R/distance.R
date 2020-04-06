@@ -20,6 +20,7 @@
 #' @return A matrix containing the distance between all the objects of the
 #' dataset calculating with the chosen distance function.
 #'
+#'
 #' @export
 distance <- function(data, distance = "euc") {
 
@@ -96,6 +97,7 @@ availableDistances <- function() {
 db <- function(x, y, data, distance) {
 
   distance <- .C("distance",
+                 PACKAGE = "dists",
                  distance = getCodeDistance(distance), # numeric code of the distance function
                  data = as.double(data), # dataset in compatible type
                  ncol = ncol(data),     # total number of variables of the dataset

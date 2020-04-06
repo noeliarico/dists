@@ -7,7 +7,13 @@
 plotDistance(index1, index2, df, distance)
 }
 \arguments{
-\item{distance}{}
+\item{index1}{Line from}
+
+\item{index2}{Line to}
+
+\item{df}{Dataframe}
+
+\item{distance}{Distance}
 }
 \value{
 

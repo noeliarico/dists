@@ -174,9 +174,6 @@ double trd(double* data, int x, int y, int nrow, int ncol) {
 
 
 
-
-
-
 //---------------------------------------------------------------------
 //-- Gower distance ---------------------------------------------------
 //---------------------------------------------------------------------
@@ -197,11 +194,6 @@ double gow(double* data, int x, int y, int nrow, int ncol) {
 
   return(total);
 }
-
-
-
-
-
 
 
 //---------------------------------------------------------------------
@@ -319,7 +311,7 @@ void distance(int *distance, // numeric code of the distance function
 
   default:
     df = euc;
-    break;
+  break;
 
   }
 
@@ -330,5 +322,3 @@ void distance(int *distance, // numeric code of the distance function
   //printf("distance = %f\n", lresult);
 
 }
-
-
