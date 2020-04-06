@@ -1,4 +1,4 @@
-# dists
+# dists <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/noeliarico/dists.svg?branch=master)](https://travis-ci.org/noeliarico/dists)
