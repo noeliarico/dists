@@ -24,6 +24,10 @@
 #' @export
 distance <- function(data, distance = "euc") {
 
+  if(tibble::is_tibble(data)) {
+    data <- as.matrix(data)
+  }
+
   n <- rownames(data)
   if(is.null(n) || !any(is.na(as.numeric(n))))
     n <- paste0("x", 1:nrow(data))
