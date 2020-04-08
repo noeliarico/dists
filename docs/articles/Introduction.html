@@ -19,7 +19,6 @@
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
 <script src="../pkgdown.js"></script><meta property="og:title" content="Introduction">
 <meta property="og:description" content="dists">
-<meta property="og:image" content="http://noeliarico.github.io/dists/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -61,13 +60,10 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/Distances.html">distances</a>
+      <a href="../articles/Distances.html">Distances</a>
     </li>
     <li>
       <a href="../articles/Introduction.html">Introduction</a>
-    </li>
-    <li>
-      <a href="../articles/explanation.html">explanation</a>
     </li>
   </ul>
 </li>
@@ -95,14 +91,58 @@
 
     
     
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dists</span>)
-<span class="co">#&gt; Warning: failed to assign RegisteredNativeSymbol for distance to distance since</span>
-<span class="co">#&gt; distance is already defined in the 'dists' namespace</span></pre></body></html></div>
+<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dists</span>)</pre></body></html></div>
+<div id="available-distances" class="section level2">
+<h2 class="hasAnchor">
+<a href="#available-distances" class="anchor"></a>Available distances</h2>
+<ul>
+<li>
+<code>can</code> - Canberra</li>
+<li>
+<code>che</code> - Chebyshev</li>
+<li>
+<code>cos</code> - Cosine</li>
+<li>
+<code>euc</code> - Euclidean</li>
+<li>
+<code>jac</code> - Jaccard</li>
+<li>
+<code>man</code> - Manhattan distance</li>
+<li>
+<code>mat</code> - Matusita</li>
+<li>
+<code>ney</code> - Neyman</li>
+<li>
+<code>pea</code> - Pearson</li>
+<li>
+<code>trd</code> - Triangular discrimation</li>
+</ul>
+</div>
+<div id="distance-between-two-vectors" class="section level2">
+<h2 class="hasAnchor">
+<a href="#distance-between-two-vectors" class="anchor"></a>Distance between two vectors</h2>
+<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="../reference/distanceBetween.html">distanceBetween</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>), <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">3</span>,<span class="fl">2</span>,<span class="fl">1</span>), <span class="st">"man"</span>)
+<span class="co">#&gt; [1] 4</span></pre></body></html></div>
+</div>
+<div id="matrix-of-distances" class="section level2">
+<h2 class="hasAnchor">
+<a href="#matrix-of-distances" class="anchor"></a>Matrix of distances</h2>
+<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="st">"toy_data1"</span>)
+<span class="fu"><a href="../reference/distance.html">distance</a></span>(<span class="no">toy_data1</span>)
+<span class="co">#&gt;          x1       x2       x3       x4       x5</span>
+<span class="co">#&gt; x1 0.000000 2.236068 3.162278 6.082763 3.605551</span>
+<span class="co">#&gt; x2 2.236068 0.000000 5.385165 5.099020 5.656854</span>
+<span class="co">#&gt; x3 3.162278 5.385165 0.000000 8.062258 2.236068</span>
+<span class="co">#&gt; x4 6.082763 5.099020 8.062258 0.000000 9.486833</span>
+<span class="co">#&gt; x5 3.605551 5.656854 2.236068 9.486833 0.000000</span></pre></body></html></div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 

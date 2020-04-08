@@ -14,7 +14,7 @@ Get the full details [here.](https://github.com/noeliarico/dists)
 You can install the current version of `dists` executing the following code:
 
 ```r
-# install.package("devtools") if you've never done it before
+# install.package("devtools") 
 devtools::install_github("noeliarico/dists")
 ```
 <!--

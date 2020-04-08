@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>distances • dists</title>
+<title>Distances • dists</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
@@ -17,9 +17,8 @@
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="distances">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Distances">
 <meta property="og:description" content="dists">
-<meta property="og:image" content="http://noeliarico.github.io/dists/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -61,13 +60,10 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../articles/Distances.html">distances</a>
+      <a href="../articles/Distances.html">Distances</a>
     </li>
     <li>
       <a href="../articles/Introduction.html">Introduction</a>
-    </li>
-    <li>
-      <a href="../articles/explanation.html">explanation</a>
     </li>
   </ul>
 </li>
@@ -85,7 +81,7 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>distances</h1>
+      <h1 data-toc-skip>Distances</h1>
             
       
       
@@ -95,40 +91,38 @@
 
     
     
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dists</span>)
-<span class="co">#&gt; Warning: failed to assign RegisteredNativeSymbol for distance to distance since</span>
-<span class="co">#&gt; distance is already defined in the 'dists' namespace</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Attaching package: 'dplyr'</span>
-<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     filter, lag</span>
-<span class="co">#&gt; The following objects are masked from 'package:base':</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;     intersect, setdiff, setequal, union</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">tidyr</span>)
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="st">"toy_data1"</span>)</pre></body></html></div>
-<p>Available distance measures:</p>
+<p>Available distance functions:</p>
 <ul>
 <li>
-<code>can</code> - Canberra distance</li>
-<li>
-<code>che</code> - <a href="#chebyshev-distance">Chebyshev distance</a>
+<code>can</code> - <a href="#can">Canberra distance</a>
 </li>
-<li><code>cos</code></li>
 <li>
-<code>euc</code> - <a href="#euclidean-distance">Euclidean distance</a>
+<code>che</code> - <a href="#che">Chebyshev distance</a>
 </li>
-<li><code>jac</code></li>
 <li>
-<code>man</code> - <a href="#manhattan-distance">Manhattan distance</a>
+<code>cos</code> - <a href="#cos">Cosine distance</a>
 </li>
-<li><code>mat</code></li>
-<li><code>ney</code></li>
-<li><code>pea</code></li>
-<li><code>trd</code></li>
+<li>
+<code>euc</code> - <a href="#euc">Euclidean distance</a>
+</li>
+<li>
+<code>jac</code> - <a href="#jac">Jaccard distance</a>
+</li>
+<li>
+<code>man</code> - <a href="#man">Manhattan distance</a>
+</li>
+<li>
+<code>mat</code> - <a href="#mat">Matusita distance</a>
+</li>
+<li>
+<code>ney</code> - <a href="#ney">Neyman distance</a>
+</li>
+<li>
+<code>pea</code> - <a href="#pea">Pearson distance</a>
+</li>
+<li>
+<code>trd</code> - <a href="#trd">Triangular discrimination distance</a>
+</li>
 </ul>
 <div id="distance-functions" class="section level1">
 <h1 class="hasAnchor">
@@ -136,62 +130,71 @@
 <div id="minkowski-distances" class="section level2">
 <h2 class="hasAnchor">
 <a href="#minkowski-distances" class="anchor"></a>Minkowski distances</h2>
-<div id="euclidean-distance" class="section level3">
+<div id="euc" class="section level3">
 <h3 class="hasAnchor">
-<a href="#euclidean-distance" class="anchor"></a>Euclidean distance</h3>
-<p><span class="math display">\[ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}\,.\]</span></p>
+<a href="#euc" class="anchor"></a>Euclidean distance</h3>
+<p><span class="math display">\[ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}\]</span></p>
 </div>
-<div id="manhattan-distance" class="section level3">
+<div id="man" class="section level3">
 <h3 class="hasAnchor">
-<a href="#manhattan-distance" class="anchor"></a>Manhattan distance</h3>
-<p><span class="math display">\[d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|\,.\]</span></p>
+<a href="#man" class="anchor"></a>Manhattan distance</h3>
+<p><span class="math display">\[d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|\]</span></p>
 </div>
-<div id="chebyshev-distance" class="section level3">
+<div id="che" class="section level3">
 <h3 class="hasAnchor">
-<a href="#chebyshev-distance" class="anchor"></a>Chebyshev distance</h3>
-<p><span class="math display">\[d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|\,.\]</span></p>
-<ul>
-<li>
-<code>can</code> - <strong>Canberra distance</strong>: [canberra]</li>
-</ul>
+<a href="#che" class="anchor"></a>Chebyshev distance</h3>
+<p><span class="math display">\[d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|\]</span></p>
+</div>
+</div>
+<div id="other-distances" class="section level2">
+<h2 class="hasAnchor">
+<a href="#other-distances" class="anchor"></a>Other distances</h2>
+<div id="can" class="section level3">
+<h3 class="hasAnchor">
+<a href="#can" class="anchor"></a>Canberra distance</h3>
 <p><span class="math display">\[
 d_{\text{can}}({\bf v}, {\bf w}) = \sum_{i=1}^n \frac{\left|v_i-w_i\right|}{\left|v_i\right|+\left|w_i\right|}
 \]</span></p>
-<ul>
-<li>
-<code>cos</code> - <strong>Cosine distance</strong>:</li>
-</ul>
-<p><span class="math display">\[d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}\,.\]</span></p>
-<ul>
-<li>
-<code>jac</code> - <strong>Jaccard distance</strong>:</li>
-</ul>
-<p><span class="math display">\[d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}\,.\]</span></p>
-<ul>
-<li>
-<code>mat</code> - <strong>Matusita distance</strong>:</li>
-</ul>
-<p><span class="math display">\[d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}\,.\]</span></p>
-<ul>
-<li>
-<code>mas</code> - <strong>Max symmetric distance</strong>:</li>
-</ul>
-<p><span class="math display">\[   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)\,.\]</span></p>
-<ul>
-<li>
-<code>ney</code> - <strong>Neyman distance</strong>:</li>
-</ul>
-<p><span class="math display">\[    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}\,.\]</span></p>
-<ul>
-<li>
-<code>pea</code> - <strong>Pearson distance</strong>:</li>
-</ul>
-<p><span class="math display">\[     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}\,.\]</span></p>
-<ul>
-<li><p><code>trd</code> - <strong>Triangular discrimination distance</strong>: <span class="math display">\[d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}\]</span></p></li>
-<li><p><code>vsd</code> - <strong>Vicissitude distance</strong>:</p></li>
-</ul>
-<p><span class="math display">\[d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}\,.\]</span></p>
+</div>
+<div id="cos" class="section level3">
+<h3 class="hasAnchor">
+<a href="#cos" class="anchor"></a>Cosine distance</h3>
+<p><span class="math display">\[d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}\]</span></p>
+</div>
+<div id="jac" class="section level3">
+<h3 class="hasAnchor">
+<a href="#jac" class="anchor"></a>Jaccard distance</h3>
+<p><span class="math display">\[d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}\]</span></p>
+</div>
+<div id="mat" class="section level3">
+<h3 class="hasAnchor">
+<a href="#mat" class="anchor"></a>Matusita distance</h3>
+<p><span class="math display">\[d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}\]</span></p>
+</div>
+<div id="max-symmetric-distance" class="section level3">
+<h3 class="hasAnchor">
+<a href="#max-symmetric-distance" class="anchor"></a>Max symmetric distance</h3>
+<p><span class="math display">\[   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)\]</span></p>
+</div>
+<div id="ney" class="section level3">
+<h3 class="hasAnchor">
+<a href="#ney" class="anchor"></a>Neyman distance</h3>
+<p><span class="math display">\[    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}\]</span></p>
+</div>
+<div id="pea" class="section level3">
+<h3 class="hasAnchor">
+<a href="#pea" class="anchor"></a>Pearson distance</h3>
+<p><span class="math display">\[     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}\]</span></p>
+</div>
+<div id="trd" class="section level3">
+<h3 class="hasAnchor">
+<a href="#trd" class="anchor"></a>Triangular discrimination distance</h3>
+<p><span class="math display">\[d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}\]</span></p>
+</div>
+<div id="vic" class="section level3">
+<h3 class="hasAnchor">
+<a href="#vic" class="anchor"></a>Vicissitude distance</h3>
+<p><span class="math display">\[d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}\]</span></p>
 </div>
 </div>
 </div>

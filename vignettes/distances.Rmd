@@ -1,5 +1,5 @@
 ---
-title: "distances"
+title: "Distances"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{distances}
@@ -12,9 +12,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-```
-
-```{r}
 library(dists)
 library(dplyr)
 library(ggplot2)
@@ -22,58 +19,58 @@ library(tidyr)
 data("toy_data1")
 ```
 
-Available distance measures:
+Available distance functions:
 
-- `can` - [Canberra distance][Canberra]
-- `che` - [Chebyshev distance][Chebyshev]
-- `cos` - [Cosine distance][Cosine]
-- `euc` - [Euclidean distance][Euclidean]
-- `jac` - [Jaccard distance][Jaccard]
-- `man` - [Manhattan distance][Manhattan]
-- `mat` - [Matusita distance][Matusita]
-- `ney` - [Neyman distance][Neyman]
-- `pea` - [Pearson distance][Pearson]
-- `trd` - [Triangular discrimination distance][Triangular discrimination]
+- `can` - [Canberra distance](#can)
+- `che` - [Chebyshev distance](#che)
+- `cos` - [Cosine distance](#cos)
+- `euc` - [Euclidean distance](#euc)
+- `jac` - [Jaccard distance](#jac)
+- `man` - [Manhattan distance](#man)
+- `mat` - [Matusita distance](#mat)
+- `ney` - [Neyman distance](#ney)
+- `pea` - [Pearson distance](#pea)
+- `trd` - [Triangular discrimination distance](#trd)
 
 # Distance functions
 
 ## Minkowski distances
 
-### Euclidean distance
+### Euclidean distance {#euc}
 
 $$ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}$$
 
 
-### Manhattan distance
+### Manhattan distance {#man}
 
 $$d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|$$
 
 
-### Chebyshev distance
+### Chebyshev distance {#che}
 
 $$d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|$$
 
 ## Other distances
 
-### Canberra distance
+### Canberra distance {#can}
    
 $$
 d_{\text{can}}({\bf v}, {\bf w}) = \sum_{i=1}^n \frac{\left|v_i-w_i\right|}{\left|v_i\right|+\left|w_i\right|}
 $$
     
-### Cosine distance
+### Cosine distance {#cos}
 
 $$d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}$$
     
 
     
-### Jaccard distance
+### Jaccard distance {#jac}
 
 $$d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}$$
 
 
 
-### Matusita distance
+### Matusita distance {#mat}
 
 $$d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}$$
 
@@ -81,17 +78,17 @@ $$d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i
 
 $$   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)$$
 
-### Neyman distance
+### Neyman distance {#ney}
 
 $$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}$$
 
-### Pearson distance
+### Pearson distance {#pea}
 
 $$     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}$$
 
-### Triangular discrimination distance
+### Triangular discrimination distance {#trd}
 $$d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
 
-### Vicissitude distance
+### Vicissitude distance {#vic}
 
 $$d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}$$
