@@ -17,3 +17,30 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(dists)
 ```
+
+## Available distances
+
+- `can` - Canberra
+- `che` - Chebyshev
+- `cos` - Cosine
+- `euc` - Euclidean
+- `jac` - Jaccard
+- `man` - Manhattan distance
+- `mat` - Matusita
+- `ney` - Neyman
+- `pea` - Pearson
+- `trd` - Triangular discrimation
+
+## Distance between two vectors
+
+```{r}
+distanceBetween(c(1,2,3), c(3,2,1), "man")
+```
+
+## Matrix of distances
+
+```{r}
+data("toy_data1")
+distance(toy_data1)
+```
+
