@@ -24,16 +24,16 @@ data("toy_data1")
 
 Available distance measures:
 
-- `can` - Canberra distance
-- `che` - [Chebyshev distance][Chebyshev distance]
-- `cos`
-- `euc` - [Euclidean distance][Euclidean distance]
-- `jac`
-- `man` - [Manhattan distance][Manhattan distance]
-- `mat`
-- `ney`
-- `pea`
-- `trd`
+- `can` - [Canberra distance][Canberra]
+- `che` - [Chebyshev distance][Chebyshev]
+- `cos` - [Cosine distance][Cosine]
+- `euc` - [Euclidean distance][Euclidean]
+- `jac` - [Jaccard distance][Jaccard]
+- `man` - [Manhattan distance][Manhattan]
+- `mat` - [Matusita distance][Matusita]
+- `ney` - [Neyman distance][Neyman]
+- `pea` - [Pearson distance][Pearson]
+- `trd` - [Triangular discrimination distance][Triangular discrimination]
 
 # Distance functions
 
@@ -41,56 +41,57 @@ Available distance measures:
 
 ### Euclidean distance
 
-$$ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}\,.$$
+$$ d_{\text{euc}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^n (v_i-w_i)^2}$$
 
 
 ### Manhattan distance
 
-$$d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|\,.$$
+$$d_{\text{man}}({\bf v}, {\bf w}) = \sum_{i=1}^n |v_i-w_i|$$
 
 
 ### Chebyshev distance
 
-$$d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|\,.$$
+$$d_{\text{che}}({\bf v}, {\bf w}) = \max_i\left|v_i-w_i\right|$$
 
+## Other distances
 
-- `can` - **Canberra distance**: [canberra]
+### Canberra distance
    
 $$
 d_{\text{can}}({\bf v}, {\bf w}) = \sum_{i=1}^n \frac{\left|v_i-w_i\right|}{\left|v_i\right|+\left|w_i\right|}
 $$
     
-- `cos` - **Cosine distance**:
+### Cosine distance
 
-$$d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}\,.$$
+$$d_{\text{cos}}({\bf v}, {\bf w}) = 1 - \frac{\sum_{i=1}^{n}{v_i w_i}}{\sqrt{\sum_{i=1}^{n}v_i^2} \sqrt{\sum_{i=1}^{n}w_i^2}}$$
     
 
     
-- `jac` - **Jaccard distance**:
+### Jaccard distance
 
-$$d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}\,.$$
+$$d_{\text{jac}}({\bf v}, {\bf w}) = \frac{\sum_{i=1}^{n}{(v_i - w_i)^2}}{\sum_{i=1}^{n}v_i^2 + \sum_{i=1}^{n}w_i^2 - \sum_{i=1}^{n}v_i w_i}$$
 
 
 
-- `mat` - **Matusita distance**:
+### Matusita distance
 
-$$d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}\,.$$
+$$d_{\text{mat}}({\bf v}, {\bf w}) = \sqrt{\sum_{i=1}^{n}(\sqrt{v_i} - \sqrt{w_i})^2}$$
 
-- `mas` - **Max symmetric distance**:
+### Max symmetric distance
 
-$$   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)\,.$$
+$$   d_{\text{msc}}({\bf v}, {\bf w}) = \max\left(\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{v_i},\sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{w_i}\right)$$
 
-- `ney` - **Neyman distance**:
+### Neyman distance
 
-$$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}\,.$$
+$$    d_{\text{ney}}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i}$$
 
-- `pea` - **Pearson distance**:
+### Pearson distance
 
-$$     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}\,.$$
+$$     d_{\text{pea}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{(v_i - w_i)^2}{w_i}$$
 
-- `trd` - **Triangular discrimination distance**:
+### Triangular discrimination distance
 $$d_{tri}({\bf v}, {\bf w}) = \sum_{i=1}^{n} \frac{(v_i - w_i)^2}{v_i + w_i}$$
 
-- `vsd` - **Vicissitude distance**:
+### Vicissitude distance
 
-$$d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}\,.$$
+$$d_{\text{vsd}}({\bf v}, {\bf w}) = \sum_{i=1}^{n}\frac{\left(v_i - w_i\right)^2}{\max\left(v_i,w_i\right)}$$
