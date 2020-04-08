@@ -71,7 +71,7 @@ distanceBetween <- function(x, y, distance = "euc") {
 
   data <- matrix(c(x, y), byrow = TRUE, ncol = length(x))
   distance <- db(1, 2, data, distance)
-  print(paste0("x=(", paste(x, collapse = ",") , "), y=(", paste(y, collapse = ", "), ") ---- ", distance))
+  # print(paste0("x=(", paste(x, collapse = ",") , "), y=(", paste(y, collapse = ", "), ") ---- ", distance))
   return(distance)
 }
 
