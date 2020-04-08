@@ -1,7 +1,9 @@
-dists-package	dists-package
 %>%	pipe
+availableDistances	availableDistances
 distance	distance
 distanceBetween	distanceBetween
-dists	dists-package
 getCodeDistance	getCodeDistance
-hello	hello
+toy_data	toy_data
+toy_data1	toy_data1
+toy_data2	toy_data2
+toy_data3	toy_data3

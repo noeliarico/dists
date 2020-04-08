@@ -74,12 +74,12 @@ ring.sty))
 
 LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 21.
+(Font)              for symbol `textless' on input line 22.
 
 [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
+[2] [3]
 No file Rd2.ind.
-[3] (./Rd2.aux)
+[4] (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -99,12 +99,12 @@ st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
 nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (3 pages, 111661 bytes).
+Output written on Rd2.pdf (4 pages, 112857 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (4 entries accepted, 0 rejected).
-Sorting entries....done (9 comparisons).
-Generating output file Rd2.ind....done (14 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (11 entries accepted, 0 rejected).
+Sorting entries....done (38 comparisons).
+Generating output file Rd2.ind....done (25 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
@@ -180,10 +180,10 @@ ring.sty)) (./Rd2.out) (./Rd2.out)
 
 LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 21.
+(Font)              for symbol `textless' on input line 22.
 
 (./Rd2.toc) [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/
-pdftex.map}] [2] (./Rd2.ind [3] [4]) (./Rd2.aux)
+pdftex.map}] [2] [3] [4] (./Rd2.ind [5] [6]) (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -202,13 +202,14 @@ onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
-nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (4 pages, 113638 bytes).
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/noelia/Libra
+ry/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (6 pages, 123564 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
-Scanning input file Rd2.idx....done (4 entries accepted, 0 rejected).
-Sorting entries....done (9 comparisons).
-Generating output file Rd2.ind....done (14 lines written, 0 warnings).
+Scanning input file Rd2.idx....done (11 entries accepted, 0 rejected).
+Sorting entries....done (38 comparisons).
+Generating output file Rd2.ind....done (25 lines written, 0 warnings).
 Output written in Rd2.ind.
 Transcript written in Rd2.ilg.
 This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex)
@@ -284,10 +285,10 @@ ring.sty)) (./Rd2.out) (./Rd2.out)
 
 LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 21.
+(Font)              for symbol `textless' on input line 22.
 
 (./Rd2.toc) [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/
-pdftex.map}] [2] (./Rd2.ind [3] [4]) (./Rd2.aux)
+pdftex.map}] [2] [3] [4] (./Rd2.ind [5] [6]) (./Rd2.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -301,9 +302,10 @@ onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
-nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (4 pages, 114127 bytes).
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/noelia/Libra
+ry/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (6 pages, 123919 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘dists-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/dh/0jwplp2n3_g2623m7x9c__mm0000gn/T//RtmplwfPVO/Rd2pdf172fb10a0c278'
+You may want to clean up by 'rm -Rf /var/folders/dh/0jwplp2n3_g2623m7x9c__mm0000gn/T//RtmpobBj6A/Rd2pdfb84626096633'

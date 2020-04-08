@@ -3,6 +3,7 @@
 ^data-raw$
 ^\.gitlab-ci\.yml$
 ^\.github$
+^\.git$
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
@@ -10,3 +11,5 @@
 ^\.travis\.yml$
 ^\.Icon$
 ^codecov\.yml$
+^cran-comments\.md$
+^doc$

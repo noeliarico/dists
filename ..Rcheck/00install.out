@@ -1,22 +1,20 @@
 * installing *source* package ‘dists’ ...
 ** using staged installation
 ** libs
-make: Nothing to be done for `all'.
-make: `symbols.rds' is up to date.
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c distances.c -o distances.o
+clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c init.c -o init.o
+clang -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o dists.so distances.o init.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
 installing to /Users/noelia/Desktop/Github/dists/..Rcheck/00LOCK-dists/00new/dists/libs
 ** R
 ** data
 *** moving datasets to lazyload DB
-** inst
 ** byte-compile and prepare package for lazy loading
 ** help
 *** installing help indices
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded from temporary location
-Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
 ** checking absolute paths in shared objects and dynamic libraries
 ** testing if installed package can be loaded from final location
-Warning: failed to assign NativeSymbolInfo for distance since distance is already defined in the ‘dists’ namespace
 ** testing if installed package keeps a record of temporary installation path
 * DONE (dists)

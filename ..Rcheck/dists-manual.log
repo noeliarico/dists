@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  28 MAR 2020 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.5)  8 APR 2020 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -291,21 +291,21 @@ LaTeX Info: Redefining \nameref on input line 8.
 \openout4 = `Rd2.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+zi4 on input line 2
-1.
+2.
 
 (/Users/noelia/Library/TinyTeX/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
 File: ot1zi4.fd 2018/01/14 OT1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 22.
 LaTeX Font Info:    Trying to load font information for OML+zi4 on input line 2
-1.
-LaTeX Font Info:    No file OMLzi4.fd. on input line 21.
+2.
+LaTeX Font Info:    No file OMLzi4.fd. on input line 22.
 
 
 LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textless' on input line 21.
+(Font)              for symbol `textless' on input line 22.
 
 (./Rd2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -319,34 +319,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [
+2]
 LaTeX Font Info:    Font shape `OT1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 90.
- [2] (./Rd2.ind [3] [4
+(Font)              scaled to size 9.0pt on input line 119.
+ [3] [4] (./Rd2.ind [5] [6
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
  (./Rd2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 Package rerunfilecheck Info: File `Rd2.out' has not changed.
-(rerunfilecheck)             Checksum: 96CB901550FC79E2A0ED5A86D7B21B79;252.
+(rerunfilecheck)             Checksum: 47FA436B36521AA3E65F2D1A1ED6C057;442.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 5453 strings out of 482913
- 84660 string characters out of 5958499
- 343223 words of memory out of 5000000
- 20586 multiletter control sequences out of 15000+600000
- 538624 words of font info for 45 fonts, out of 8000000 for 9000
+ 5476 strings out of 482913
+ 85016 string characters out of 5958499
+ 344223 words of memory out of 5000000
+ 20591 multiletter control sequences out of 15000+600000
+ 538931 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,5n,40p,224b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,6n,40p,224b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/Users/noelia/Library/TinyTeX/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-
 0.enc}</Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/public/inconsolata/
 Inconsolata-zi4r.pfb></Users/noelia/Library/TinyTeX/texmf-dist/fonts/type1/publ
@@ -357,11 +358,12 @@ onts/type1/public/amsfonts/cm/cmr10.pfb></Users/noelia/Library/TinyTeX/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
-nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (4 pages, 114127 bytes).
+nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/noelia/Libra
+ry/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Rd2.pdf (6 pages, 123919 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
