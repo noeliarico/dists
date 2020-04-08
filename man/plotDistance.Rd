@@ -15,9 +15,6 @@ plotDistance(index1, index2, df, distance)
 
 \item{distance}{Distance}
 }
-\value{
-
-}
 \description{
 Plot the distance between two functions
 }

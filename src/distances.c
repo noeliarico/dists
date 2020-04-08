@@ -258,14 +258,14 @@ double pea(double* data, int x, int y, int nrow, int ncol) {
 }
 
 
-void distance(int *distance, // numeric code of the distance function
-              double *data,      // data
-              int *ncol,     // total number of variables of the dataset
-              int *nrow,     // total number of objects of the dataset
-              // calculating the distance from x to y
-              int *x,        // index of the first object
-              int *y,       // index of the second object
-              double *result) {// array of centers
+void dis(int *distance, // numeric code of the distance function
+         double *data,      // data
+         int *ncol,     // total number of variables of the dataset
+         int *nrow,     // total number of objects of the dataset
+         // calculating the distance from x to y
+         int *x,        // index of the first object
+         int *y,       // index of the second object
+         double *result) {// array of centers
 
   // Original variables
   int lncol = *ncol, lnrow = *nrow, lx = *x - 1, ly = *y - 1;

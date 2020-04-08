@@ -96,8 +96,8 @@ availableDistances <- function() {
 #' @keywords internal
 db <- function(x, y, data, distance) {
 
-  distance <- .C("distance",
-                 PACKAGE = "dists",
+  distance <- .C(dis,
+                 #PACKAGE = "dists",
                  distance = getCodeDistance(distance), # numeric code of the distance function
                  data = as.double(data), # dataset in compatible type
                  ncol = ncol(data),     # total number of variables of the dataset
@@ -114,7 +114,8 @@ dbv <- Vectorize(db, vectorize.args = c("x", "y"))
 #'
 #' @param distanceName Identifier of the distance function using a string of lower case letters of three characters
 #'
-#' @return
+#' @return A unique identifier for the distance that
+#' is used in the switch-case function in c
 #' @keywords internal
 getCodeDistance <- function(distanceName) {
 

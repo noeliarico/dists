@@ -10,7 +10,8 @@ getCodeDistance(distanceName)
 \item{distanceName}{Identifier of the distance function using a string of lower case letters of three characters}
 }
 \value{
-
+A unique identifier for the distance that
+is used in the switch-case function in c
 }
 \description{
 Get the code of a distance function

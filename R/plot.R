@@ -5,7 +5,6 @@
 #' @param df Dataframe
 #' @param distance Distance
 #'
-#' @return
 plotDistance <- function(index1, index2, df, distance) {
   df <- as.data.frame(df)
   x1 = df[index1, 1]   # x1/x2/y1/y2 defined here for shorthand later
