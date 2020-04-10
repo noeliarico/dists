@@ -27,3 +27,4 @@ Suggests:
     testthat (>= 2.1.0),
     covr
 VignetteBuilder: knitr
+URL: https://github.com/noeliarico/dists, http://noeliarico.github.io/dists/
