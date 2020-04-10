@@ -7,9 +7,14 @@ Depends:
 Author: Noelia Rico [aut, cre]
 Maintainer: Noelia Rico <noeliarico@uniovi.es>
 Description: General interface for calculating distance between objects.
-   The package provides functions to calculate matrix of distances or the
-   distance between two objects with an argument that specified the distance
-   function used.
+   The package aims to provide a common interface for computing distance 
+   functions using a function called distance() with a parameter 
+   containing the name of the distance to be used (Euclidean, 
+   Jaccard, Manhattan, Cosine...). Also, it works with tibbles 
+   as input instead of matrices (dist() classic function 
+   only works with matrices). The distances are computed 
+   in C to speed up the execution.
+   V. B. Surya Prasath et al. (2019) <arXiv:1708.04321v3>
 License: GPL-3
 Imports: 
     clusterlab,

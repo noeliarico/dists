@@ -1,11 +1,16 @@
-This is a new release. The package aims to provide a 
-  common interface for computing distance functions 
-  using a function called "distance" with a parameter 
-  containing the name of the distance (Euclidean, 
-  Jaccard, Manhattan, Cosine...). Also, it works with tibbles 
-  as input instead of matrices (dists classic function 
-  only works with matrices). The distances are computed 
-  in C to speed up the execution.
+# Second submission
+
+The package has been updated following the reviewer comments after
+the first submission. Changes:
+
+- DESCRIPTION file adds URLS to the github repository and website of the package.
+- Reference to the paper with the theoretical background of the distance function has been added.
+- plot.R and Example.R have been removed as they were intended for personal used only and mistakenly added in the first submission.
+
+
+# First submission
+
+This is a new release.
 
 ## Test environments
 * local OS X install, R 3.6.2

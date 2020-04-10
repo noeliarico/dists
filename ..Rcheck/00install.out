@@ -1,9 +1,8 @@
 * installing *source* package ‘dists’ ...
 ** using staged installation
 ** libs
-clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c distances.c -o distances.o
-clang -I"/Library/Frameworks/R.framework/Resources/include" -DNDEBUG   -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include  -fPIC  -Wall -g -O2  -c init.c -o init.o
-clang -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Library/Frameworks/R.framework/Resources/lib -L/usr/local/lib -o dists.so distances.o init.o -F/Library/Frameworks/R.framework/.. -framework R -Wl,-framework -Wl,CoreFoundation
+make: Nothing to be done for `all'.
+make: `symbols.rds' is up to date.
 installing to /Users/noelia/Desktop/Github/dists/..Rcheck/00LOCK-dists/00new/dists/libs
 ** R
 ** data
@@ -11,6 +10,7 @@ installing to /Users/noelia/Desktop/Github/dists/..Rcheck/00LOCK-dists/00new/dis
 ** byte-compile and prepare package for lazy loading
 ** help
 *** installing help indices
+*** copying figures
 ** building package indices
 ** installing vignettes
 ** testing if installed package can be loaded from temporary location

@@ -4,9 +4,18 @@
 #' using the distance function indicated in the arguments.
 #'
 #' @details
-#' - Manhattan distance (man):
-#' - Euclidean distance (euc):
-#' - Chebyshev distance (che):
+#' \describe{
+#'   \item{can}{Canberra distance}
+#'   \item{che}{Chebyshev distance}
+#'   \item{cos}{Cosine distance}
+#'   \item{euc}{Euclidean distance}
+#'   \item{jac}{Jaccard distance}
+#'   \item{man}{Manhattan distance}
+#'   \item{mat}{Matusita distance}
+#'   \item{ney}{Neyman distance}
+#'   \item{pea}{Pearson distance}
+#'   \item{trd}{Triangular discrimination distance}
+#' }
 #'
 #' @param data matrix where each row represent an object of the dataset
 #' defined by the variables in the columns.

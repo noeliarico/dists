@@ -77,9 +77,9 @@ LaTeX Font Warning: Font shape `OML/zi4/m/n' undefined
 (Font)              for symbol `textless' on input line 22.
 
 [1{/Users/noelia/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3]
+ [2] [3] [4]
 No file Rd2.ind.
-[4] (./Rd2.aux)
+[5] (./Rd2.aux)
 
 Package rerunfilecheck Warning: File `Rd2.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -99,7 +99,7 @@ st/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/noelia/Library/TinyTeX/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
 nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (4 pages, 112857 bytes).
+Output written on Rd2.pdf (5 pages, 116883 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (11 entries accepted, 0 rejected).
@@ -204,7 +204,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
 nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/noelia/Libra
 ry/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (6 pages, 123564 bytes).
+Output written on Rd2.pdf (6 pages, 126760 bytes).
 Transcript written on Rd2.log.
 This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
 Scanning input file Rd2.idx....done (11 entries accepted, 0 rejected).
@@ -304,8 +304,8 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></Users/noelia/Library/TinyTeX
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></Users/noelia/Library/Ti
 nyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/noelia/Libra
 ry/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Rd2.pdf (6 pages, 123919 bytes).
+Output written on Rd2.pdf (6 pages, 126952 bytes).
 Transcript written on Rd2.log.
 Saving output to ‘dists-manual.pdf’ ...
 Done
-You may want to clean up by 'rm -Rf /var/folders/dh/0jwplp2n3_g2623m7x9c__mm0000gn/T//RtmpobBj6A/Rd2pdfb84626096633'
+You may want to clean up by 'rm -Rf /var/folders/dh/0jwplp2n3_g2623m7x9c__mm0000gn/T//RtmpoPa0Ks/Rd2pdfa3627ac0968'
