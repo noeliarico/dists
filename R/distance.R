@@ -84,6 +84,30 @@ distanceBetween <- function(x, y, distance = "euc") {
   return(distance)
 }
 
+#' @export
+distanceFromTo <- function(x, y, distance = "euc") {
+
+  if(is.data.frame(x)) x <- as.matrix(x)
+  if(is.data.frame(y)) x <- as.matrix(y)
+
+  if(ncol(x) != ncol(y))
+    stop("The matrices must have the same columns")
+
+  if(!distance %in% availableDistances())
+    stop("Distance not available")
+
+  data <- rbind(x, y)
+  from <- 1:nrow(x)
+  to <- (nrow(x)+1):nrow(data)
+  grid <- expand.grid(from, to)
+  distance <- sapply(1:nrow(grid), function(x) {
+    db(grid[x,1], grid[x,2], data = data, distance = distance)
+  })
+  distance <- matrix(distance, nrow = nrow(x))
+  # print(paste0("x=(", paste(x, collapse = ",") , "), y=(", paste(y, collapse = ", "), ") ---- ", distance))
+  return(distance)
+}
+
 #' List of available distances
 #'
 #' `availableDistance` returns a list of the available codes representing
