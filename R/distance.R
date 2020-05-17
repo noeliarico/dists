@@ -87,8 +87,9 @@ distanceBetween <- function(x, y, distance = "euc") {
 #' @export
 distanceFromTo <- function(x, y, distance = "euc") {
 
+
   if(is.data.frame(x)) x <- as.matrix(x)
-  if(is.data.frame(y)) x <- as.matrix(y)
+  if(is.data.frame(y)) y <- as.matrix(y)
 
   if(ncol(x) != ncol(y))
     stop("The matrices must have the same columns")
@@ -97,6 +98,8 @@ distanceFromTo <- function(x, y, distance = "euc") {
     stop("Distance not available")
 
   data <- rbind(x, y)
+  print("DATA")
+  print(data)
   from <- 1:nrow(x)
   to <- (nrow(x)+1):nrow(data)
   grid <- expand.grid(from, to)

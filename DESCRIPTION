@@ -17,7 +17,6 @@ Description: General interface for calculating distance between objects.
    V. B. Surya Prasath et al. (2019) <arXiv:1708.04321v3>
 License: GPL-3
 Imports: 
-    clusterlab,
     dplyr,
     ggplot2,
     magrittr,
