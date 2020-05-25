@@ -98,8 +98,6 @@ distanceFromTo <- function(x, y, distance = "euc") {
     stop("Distance not available")
 
   data <- rbind(x, y)
-  print("DATA")
-  print(data)
   from <- 1:nrow(x)
   to <- (nrow(x)+1):nrow(data)
   grid <- expand.grid(from, to)
@@ -126,9 +124,11 @@ availableDistances <- function() {
            "jac", # 902 - Jaccard
            "man", # 12013 - Manhattan
            "mat", # 12019 - Matusita
-           "ney", # 13424 - Neyman
-           "pea", # 1540 - Pearson distance
-           "trd"  # 19173 - Triangular discrimination (Squared Chord)
+           #"ney", # 13424 - Neyman
+           #"pea", # 1540 - Pearson distance
+           "trd",  # 19173 - Triangular discrimination (Squared Chord)
+           "vic",  # 2182
+           "mas" # 12018
          ))
 }
 

@@ -154,19 +154,23 @@ double mat(double* data, int x, int y, int nrow, int ncol) {
 
 
 //---------------------------------------------------------------------
-//-- Squared Chord distance -------------------------------------------
+//-- Triangular discrimination distance -------------------------------------------
 //---------------------------------------------------------------------
 double trd(double* data, int x, int y, int nrow, int ncol) {
 
   int c;
-  double total = 0.0, xi, yi, sum = 0.0;
+  double total = 0.0, xi, yi, sum = 0.0, num = 0.0;
 
   for(c = 0; c < ncol; c++) {
     xi = data[x + nrow * c];
     yi = data[y + nrow * c];
-    sum = sqrt(xi) - sqrt(yi); // difference
+    sum = xi - yi; // difference
     sum = sum * sum; // square of the differences
-    total += sum;
+    num = xi + yi;
+    if(num > 0) {
+      total += sum/num;
+    }
+
   }
 
   return(total);
@@ -257,6 +261,68 @@ double pea(double* data, int x, int y, int nrow, int ncol) {
   return total;
 }
 
+//---------------------------------------------------------------------
+//-- Vicissitude distance -------------------------------------------------
+//---------------------------------------------------------------------
+double vic(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double total = 0.0, xi, yi, numerator, max = 0.0;
+
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    numerator = (xi - yi) * (xi - yi);
+    if(xi > yi) {
+      max = xi;
+    }
+    else {
+      max = yi;
+    }
+    if(max > 0) {
+      total += (numerator / max);
+    }
+  }
+
+  return total;
+}
+
+double mas(double* data, int x, int y, int nrow, int ncol) {
+
+  int c;
+  double total = 0.0, xi, yi, numerator, opc1 = 0.0, opc2 = 0.0;
+
+  //printf("mas-------\n");
+
+  for(c = 0; c < ncol; c++) {
+    xi = data[x + nrow * c];
+    yi = data[y + nrow * c];
+    numerator = (xi - yi) * (xi - yi);
+
+    //x = %d , y = %d,
+    //printf("x = %f, y = %f, numerator = %f\n", xi, yi, numerator);
+
+    if(xi > 0.0) {
+      opc1 += numerator / xi;
+      //printf("opc1 = %f\n", opc1);
+    }
+
+    if(yi > 0.0) {
+      opc2 += numerator / yi;
+      //printf("opc2 = %f\n", opc2);
+    }
+
+  }
+
+  if(opc1 > opc2) {
+    total = opc1;
+  }
+  else {
+    total = opc2;
+  }
+
+  return total;
+}
 
 void dis(int *distance, // numeric code of the distance function
          double *data,      // data
@@ -307,6 +373,12 @@ void dis(int *distance, // numeric code of the distance function
     break;
   case 19173: // Triangular discrimination distance (Squared Chord distance)
     df = trd;
+    break;
+  case 2182:
+    df = vic;
+    break;
+  case 12018:
+    df = mas;
     break;
 
   default:
